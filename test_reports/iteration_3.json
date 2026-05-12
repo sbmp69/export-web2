@@ -1,0 +1,37 @@
+{
+  "summary": "Tested bilingual EN/AR i18n + RTL additions on the live preview URL. Backend: 12/12 pytest pass — added TestArabicInquiries class with 2 new tests (Arabic UTF-8 round-trip + mixed Arabic/English) covering POST /api/inquiries with Arabic name/message/interest/company; data is stored in MongoDB and returned correctly via GET. No backend regressions. Frontend desktop (1920x1080) 14/14: default lang=EN/dir=ltr on first visit, lang-toggle + lang-en + lang-ar testids visible in navbar, clicking AR sets html[lang]=ar, html[dir]=rtl, persists in localStorage 'alux.lang', nav text translates ('About'→'عن الشركة'), hero buttons translate ('استكشف المنتجات' / 'تواصل معنا'), reload preserves AR, all sections render in Arabic (Products, rods-section with 4 rod-type cards R-01..R-04, spec-table with 10 rows, contact form, interest-0..7 chips all show Arabic labels), Arabic inquiry submission via UI succeeds (Arabic toast 'تم استلام استفسارك...' visible), backend GET confirms persisted Arabic row, switching back to EN restores LTR + English text, all 5 brass-rods images load (naturalWidth>0). Mobile (390x844) 11/11: compact lang-toggle visible, switch to AR works, mobile menu shows Arabic nav, no horizontal overflow in either AR or EN mode (scrollWidth=clientWidth=390), all key sections render at 390px in AR.",
+  "backend_issues": {
+    "critical": [],
+    "minor": [
+      {"endpoint": "/api/inquiries POST", "issue": "Pre-existing: exception handler references `logger` (line 95) before module-level `logger` is defined (line 123). Lazy resolution saves it, but ordering is fragile. Carried over from iterations 1 & 2."},
+      {"endpoint": "CORS middleware", "issue": "Pre-existing: allow_credentials=True with allow_origins='*' violates CORS spec. Carried over from iterations 1 & 2."}
+    ]
+  },
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": []
+  },
+  "test_report_links": [
+    "/app/backend/tests/test_alux_api.py",
+    "/app/test_reports/pytest/pytest_results.xml"
+  ],
+  "action_items": [],
+  "critical_code_review_comments": [
+    "Two elements share data-testid='lang-toggle' (one for desktop hidden < lg, one for mobile compact). This matches React conditional rendering but means automated selectors must use .last or be scoped. Not a bug — a testing-pattern note.",
+    "I18nProvider: useEffect that loads localStorage runs after the first render where html[dir] is set from initial state 'en'. There is a brief flash of EN even when the user previously selected AR. Acceptable for SPA, but for production consider a tiny inline script in /public/index.html to read localStorage before hydration to avoid the flash.",
+    "translations.js (~548 lines) is large but cohesive — splitting per section (en/ar/index) would scale better as more languages are added.",
+    "Carried over: GET /api/inquiries still publicly readable with no auth — leaks customer PII (now also Arabic PII). Important for production.",
+    "Carried over: backend Inquiry model accepts `interest` as free string (max 80 chars) — Arabic strings fit but consume more bytes; UTF-8 length is fine here but worth noting if future fields add stricter limits."
+  ],
+  "updated_files": [
+    "/app/backend/tests/test_alux_api.py (added TestArabicInquiries class with 2 new tests for Arabic UTF-8 + mixed-script inquiries)"
+  ],
+  "success_rate": {"backend": "100% (12/12)", "frontend": "100% (14/14 desktop + 11/11 mobile)"},
+  "test_credentials": "N/A — no auth in app",
+  "seed_data_creation": "Created TEST_-prefixed inquiry rows in MongoDB 'inquiries' collection, including Arabic ones: 'TEST_عميل تجريبي' (interest='قضبان النحاس · تصدير'), 'TEST_Ali علي' (mixed Arabic/English), and 'TEST_عميل اختبار AR' from UI submission. Safe to leave or prune by name LIKE 'TEST%'.",
+  "retest_needed": false,
+  "main_agent_can_self_test": true,
+  "context_for_next_testing_agent": "Backend tests at /app/backend/tests/test_alux_api.py (pytest, 12 tests). Public URL https://architectural-metal.preview.emergentagent.com. i18n: localStorage key='alux.lang', supported langs=['en','ar'], default='en'. data-testids of note for i18n: lang-toggle (matches 2 elements desktop+mobile, use .last for mobile), lang-en, lang-ar; sections still use existing testids unchanged. Arabic nav text: 'عن الشركة' (About), hero buttons 'استكشف المنتجات' / 'تواصل معنا'. Interest chips testid is interest-0..7 (numeric index, language-agnostic) — use these instead of slug-based ones. RTL: dir attribute on <html> flips layout, no horizontal overflow at 390px confirmed.",
+  "rca of the issue": "No bugs to RCA — all i18n/RTL features work as specified, Arabic round-trips through API and DB cleanly, no regressions in pre-existing flows."
+}

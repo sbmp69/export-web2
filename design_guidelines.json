@@ -1,0 +1,95 @@
+{
+  "theme": "dark",
+  "archetype": "Archetype 5 (Jewel & Luxury)",
+  "vibe": "Premium, trustworthy, international, elegant, high-end industrial.",
+  "brand": {
+    "name": "Alux Architectural",
+    "owner": "Aadesh Enterprise",
+    "location": "Mumbai, India",
+    "message": "High-quality architectural hardware for modern spaces."
+  },
+  "colors": {
+    "background": "#0A0A0A",
+    "surface": "#141414",
+    "surface_glass": "rgba(10, 10, 10, 0.7)",
+    "primary": "#D4AF37",
+    "primary_hover": "#F3C844",
+    "secondary": "#CD7F32",
+    "text_primary": "#FDFBF7",
+    "text_secondary": "#A1A1AA",
+    "border": "rgba(255, 255, 255, 0.1)",
+    "whatsapp": "#25D366"
+  },
+  "typography": {
+    "heading_font": "Playfair Display",
+    "body_font": "Manrope",
+    "scale": {
+      "h1": "text-5xl sm:text-6xl md:text-7xl tracking-tighter leading-none font-light",
+      "h2": "text-3xl sm:text-4xl lg:text-5xl tracking-tight leading-tight",
+      "h3": "text-2xl sm:text-3xl",
+      "h4": "text-lg sm:text-xl",
+      "body": "text-base leading-relaxed font-light text-[#A1A1AA]",
+      "overline": "text-xs uppercase tracking-[0.2em] text-[#D4AF37]"
+    }
+  },
+  "layout_and_spacing": {
+    "philosophy": "Generous spacing. p-12 to p-24 for section padding to emphasize luxury. Use negative space aggressively.",
+    "bento_grid": "Use grid-cols-1 md:grid-cols-12 with wide gaps (gap-8 to gap-12). Create asymmetry and visual tension."
+  },
+  "components": {
+    "navbar": "Sticky crystal glassmorphism (backdrop-blur-xl bg-black/60 border-b border-white/10). High saturation if possible. Links should have subtle hover states (text-white).",
+    "buttons": "Flat, sharp edges. Primary button: bg-[#D4AF37] text-black hover:bg-[#F3C844] transition-colors. Secondary: border border-white/20 text-white hover:border-white/40.",
+    "cards": "Flat background (#141414), 1px solid border (border-white/10). No soft shadows, rely on inner border contrast.",
+    "forms": "Use Shadcn customized for dark mode. Input: bg-transparent border-white/20 focus:border-[#D4AF37] focus:ring-1 focus:ring-[#D4AF37]."
+  },
+  "animations": {
+    "global": "Lenis smooth scroll is mandatory for a premium momentum feel. Framer Motion for scroll-triggered reveals.",
+    "hero": "Slow scale-in for background image (ken burns effect). Staggered fade-up for H1 text.",
+    "interactions": "Hover states must have distinct contrast shifts. Cards subtly translate up (-translate-y-1) and borders shift to brass (border-[#D4AF37]/50)."
+  },
+  "media": {
+    "hero_background": {
+      "url": "https://images.pexels.com/photos/13722886/pexels-photo-13722886.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Sleek modern living room featuring dark tones and elegant furnishings with ambient lighting."
+    },
+    "products": [
+      {
+        "url": "https://images.unsplash.com/photo-1670864083452-e49c718b911f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NzV8MHwxfHNlYXJjaHw0fHxsdXh1cnklMjBkb29yJTIwYnJhc3MlMjBoYXJkd2FyZXxlbnwwfHx8fDE3NzgwODAxNDB8MA&ixlib=rb-4.1.0&q=85",
+        "title": "Premium Brass Hinges"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1745682593309-f0aeb18af228?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NzV8MHwxfHNlYXJjaHwzfHxsdXh1cnklMjBkb29yJTIwYnJhc3MlMjBoYXJkd2FyZXxlbnwwfHx8fDE3NzgwODAxNDB8MA&ixlib=rb-4.1.0&q=85",
+        "title": "Architectural Door Handles"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1760085160766-ed473efe941e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NzV8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBkb29yJTIwYnJhc3MlMjBoYXJkd2FyZXxlbnwwfHx8fDE3NzgwODAxNDB8MA&ixlib=rb-4.1.0&q=85",
+        "title": "Luxury Door Fittings"
+      }
+    ],
+    "experience_gallery": [
+      "https://images.unsplash.com/photo-1770816306485-862b40ecc402?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1NzZ8MHwxfHNlYXJjaHwzfHxkYXJrJTIwbW9kZXJuJTIwaW50ZXJpb3IlMjBhcmNoaXRlY3R1cmV8ZW58MHx8fHwxNzc4MDgwMTQwfDA&ixlib=rb-4.1.0&q=85",
+      "https://images.pexels.com/photos/13722891/pexels-photo-13722891.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "https://images.pexels.com/photos/7605492/pexels-photo-7605492.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    ]
+  },
+  "specific_sections": {
+    "hero": "Must use a gradient overlay on the hero image (`bg-gradient-to-r from-black/80 via-black/40 to-black/10`) to ensure text contrast while letting the architectural image breathe. Do not use a flat overlay.",
+    "about_brand": "Text-heavy but highly stylized. Highlight serving dealers, builders, architects. Use the 'Bento' Mode A grid.",
+    "why_choose_us": "Cards displaying 'Durable Brass Quality', 'Precision Finishing', 'Bulk Orders'. Use a subtle 'Tracing Beam' border effect if possible, or extremely crisp 1px borders.",
+    "contact_section": "Include form and dark-themed Google Maps iframe. Direct contact: WhatsApp, phone (9099369442), email (purnatpedhadiya2016@gmail.com).",
+    "whatsapp_float": "Fixed bottom-right button. Use Lucide or Phosphor icon. Must have pulse animation or subtle glow."
+  },
+  "accessibility_and_testing": {
+    "contrast": "Ensure text over images has sufficient text-shadow or gradient backing.",
+    "testing": "All interactive elements (buttons, links, inputs) MUST have `data-testid` attributes (e.g., `data-testid='hero-explore-button'`)."
+  },
+  "instructions_to_main_agent": [
+    "Install and setup @studio-freight/lenis for smooth scrolling.",
+    "Install framer-motion for animations.",
+    "Install lucide-react for icons.",
+    "Import Playfair Display and Manrope from Google Fonts in index.css.",
+    "Implement layouts using raw Tailwind HTML for marketing sections (Hero, Galleries) to maintain structural freedom. Use Shadcn exclusively for the Contact Form.",
+    "Never center everything; embrace asymmetric grid layouts for an editorial feel.",
+    "Use exact image URLs provided. Do not use generic placeholders."
+  ]
+}

@@ -1,0 +1,199 @@
+import React, { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Menu, X, Globe } from "lucide-react";
+import { useI18n } from "@/i18n/I18nProvider";
+import { useNavigate, useLocation } from "react-router-dom";
+
+const NAV_IDS = ["about", "products", "rods", "why", "experience", "contact"];
+
+const scrollTo = (id) => {
+  const el = document.getElementById(id);
+  if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+};
+
+function LangToggle({ compact = false }) {
+  const { lang, setLang } = useI18n();
+  return (
+    <div
+      className={`inline-flex items-center border border-white/15 ${compact ? "" : "hover:border-[#D4AF37]/60"} transition-colors`}
+      data-testid="lang-toggle"
+    >
+      <button
+        onClick={() => setLang("en")}
+        data-testid="lang-en"
+        className={`px-3 py-1.5 text-[11px] tracking-[0.2em] uppercase transition-colors ${
+          lang === "en" ? "bg-[#D4AF37] text-black" : "text-white/70 hover:text-white"
+        }`}
+      >
+        EN
+      </button>
+      <button
+        onClick={() => setLang("ar")}
+        data-testid="lang-ar"
+        className={`px-3 py-1.5 text-[11px] tracking-[0.2em] uppercase transition-colors ${
+          lang === "ar" ? "bg-[#D4AF37] text-black" : "text-white/70 hover:text-white"
+        }`}
+      >
+        AR
+      </button>
+    </div>
+  );
+}
+
+export default function Navbar() {
+  const [scrolled, setScrolled] = useState(false);
+  const [open, setOpen] = useState(false);
+  const { t } = useI18n();
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleScrollTo = (id) => {
+    if (location.pathname !== "/") {
+      navigate("/");
+      setTimeout(() => scrollTo(id), 100);
+    } else {
+      scrollTo(id);
+    }
+  };
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 30);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  return (
+    <>
+      <motion.header
+        initial={{ y: -40, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+          scrolled
+            ? "backdrop-blur-xl bg-black/70 border-b border-white/10"
+            : "bg-transparent"
+        }`}
+        data-testid="main-navbar"
+      >
+        <nav className="max-w-[1400px] mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
+          <button
+            onClick={() => handleScrollTo("hero")}
+            data-testid="nav-logo"
+            className="flex items-center gap-3 group"
+          >
+            <span className="relative w-10 h-10 flex items-center justify-center border border-[#D4AF37]/40 group-hover:border-[#D4AF37] transition shrink-0">
+              <span className="font-display text-[#D4AF37] text-xl leading-none">A</span>
+              <span className="absolute -bottom-1 -right-1 w-2 h-2 bg-[#D4AF37]" />
+            </span>
+            <div className="text-start leading-tight">
+              <div className="font-display text-base tracking-wide text-white">
+                Alux<span className="text-[#D4AF37]"> Architectural</span>
+              </div>
+              <div className="text-[10px] uppercase tracking-[0.25em] text-white/50">
+                Aadesh Enterprise
+              </div>
+            </div>
+          </button>
+
+          <ul className="hidden lg:flex items-center gap-10">
+            {NAV_IDS.map((id) => (
+              <li key={id}>
+                <button
+                  data-testid={`nav-link-${id}`}
+                  onClick={() => handleScrollTo(id)}
+                  className="text-sm tracking-wide text-white/70 hover:text-white link-underline transition"
+                >
+                  {t.nav[id]}
+                </button>
+              </li>
+            ))}
+            <li>
+              <button
+                onClick={() => navigate("/catalogue")}
+                className="text-sm tracking-wide text-[#D4AF37] hover:text-[#F3C844] link-underline transition font-medium"
+              >
+                {t.nav.catalogue}
+              </button>
+            </li>
+          </ul>
+
+          <div className="hidden lg:flex items-center gap-4">
+            <LangToggle />
+            <button
+              data-testid="nav-cta-inquire"
+              onClick={() => handleScrollTo("contact")}
+              className="px-5 py-2.5 bg-[#D4AF37] hover:bg-[#F3C844] text-black text-sm font-medium tracking-wide transition-colors"
+            >
+              {t.nav.cta}
+            </button>
+          </div>
+
+          <div className="lg:hidden flex items-center gap-2">
+            <LangToggle compact />
+            <button
+              data-testid="nav-mobile-toggle"
+              onClick={() => setOpen((s) => !s)}
+              className="text-white p-2"
+              aria-label="Toggle menu"
+            >
+              {open ? <X size={22} /> : <Menu size={22} />}
+            </button>
+          </div>
+        </nav>
+      </motion.header>
+
+      <AnimatePresence>
+        {open && (
+          <motion.div
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+            className="fixed top-20 left-0 right-0 z-40 lg:hidden backdrop-blur-xl bg-black/90 border-b border-white/10"
+            data-testid="mobile-menu"
+          >
+            <ul className="px-6 py-6 flex flex-col gap-5">
+              {NAV_IDS.map((id) => (
+                <li key={id}>
+                  <button
+                    data-testid={`mobile-nav-${id}`}
+                    onClick={() => {
+                      setOpen(false);
+                      handleScrollTo(id);
+                    }}
+                    className="text-base text-white/80"
+                  >
+                    {t.nav[id]}
+                  </button>
+                </li>
+              ))}
+              <li>
+                <button
+                  onClick={() => {
+                    setOpen(false);
+                    navigate("/catalogue");
+                  }}
+                  className="text-base text-[#D4AF37] font-medium"
+                >
+                  {t.nav.catalogue}
+                </button>
+              </li>
+              <li>
+                <button
+                  data-testid="mobile-cta"
+                  onClick={() => {
+                    setOpen(false);
+                    handleScrollTo("contact");
+                  }}
+                  className="mt-2 px-5 py-3 bg-[#D4AF37] text-black text-sm font-medium"
+                >
+                  {t.nav.cta}
+                </button>
+              </li>
+            </ul>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </>
+  );
+}
