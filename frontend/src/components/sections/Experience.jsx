@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useI18n } from "@/i18n/I18nProvider";
+import { useNavigate } from "react-router-dom";
 
 const GALLERY = [
   {
@@ -21,6 +22,7 @@ const GALLERY = [
 ];
 
 export default function Experience() {
+  const navigate = useNavigate();
   const { t } = useI18n();
   const e = t.experience;
 
@@ -53,7 +55,8 @@ export default function Experience() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.8, delay: i * 0.08 }}
-              className={`relative overflow-hidden border border-[#0A0A0A]/10 group ${g.span}`}
+              onClick={() => navigate("/catalogue")}
+              className={`relative overflow-hidden border border-[#0A0A0A]/10 group cursor-pointer ${g.span}`}
               data-testid={`experience-image-${i}`}
             >
               <img

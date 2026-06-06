@@ -92,7 +92,7 @@ export default function Products() {
                 transition={{ duration: 0.7, delay: i * 0.06 }}
                 onMouseEnter={() => setHovered(s.code)}
                 onMouseLeave={() => setHovered(null)}
-                onClick={() => goTo(s.target)}
+                onClick={() => navigate("/catalogue")}
                 className={`relative group overflow-hidden border border-[#0A0A0A]/10 hover:border-[#9CB4A9]/50 transition-all duration-500 bg-[#F5F5F5] cursor-pointer ${s.span}`}
                 data-testid={`product-card-${s.code}`}
               >
