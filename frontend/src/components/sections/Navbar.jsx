@@ -82,7 +82,7 @@ export default function Navbar() {
             data-testid="nav-logo"
             className="flex items-center gap-3 group"
           >
-            <img src="/omera_logo.png" alt="Omera Exports" className="w-11 h-11 object-contain shrink-0 mix-blend-multiply" />
+            <img src="/omera_logo.png" alt="Omera Exports" className="w-14 h-14 object-contain shrink-0 mix-blend-multiply scale-[1.35]" />
             <div className="text-start leading-tight">
               <div className="font-display text-base tracking-wide text-[#0A0A0A]">
                 Omera<span className="text-[#9CB4A9]"> Exports</span>
