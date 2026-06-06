@@ -104,7 +104,7 @@ export default function Footer() {
           <div className="overline mb-6">{f.place}</div>
           <h4 className="font-display text-5xl md:text-7xl lg:text-[120px] leading-[0.9] tracking-tight font-light">
             <span className="text-[#0A0A0A]">Omera</span>{" "}
-            <span className="brass-text italic">Architectural.</span>
+            <span className="brass-text italic">Exports.</span>
           </h4>
           <p className="mt-6 max-w-xl text-[#0A0A0A] leading-relaxed">
             {f.desc}

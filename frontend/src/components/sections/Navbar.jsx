@@ -88,7 +88,7 @@ export default function Navbar() {
             </span>
             <div className="text-start leading-tight">
               <div className="font-display text-base tracking-wide text-[#0A0A0A]">
-                Omera<span className="text-[#9CB4A9]"> Architectural</span>
+                Omera<span className="text-[#9CB4A9]"> Exports</span>
               </div>
               <div className="text-[10px] uppercase tracking-[0.25em] text-[#0A0A0A]">
                 Aadesh Enterprise
