@@ -69,10 +69,10 @@ export default function Navbar() {
         initial={{ y: -40, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-[#FFFFFF] ${
           scrolled
-            ? "backdrop-blur-xl bg-[#FFFFFF]/70 border-b border-[#0A0A0A]/10"
-            : "bg-transparent"
+            ? "border-b border-[#0A0A0A]/10 shadow-sm"
+            : ""
         }`}
         data-testid="main-navbar"
       >
