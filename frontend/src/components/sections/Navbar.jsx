@@ -83,12 +83,12 @@ export default function Navbar() {
             className="flex items-center gap-3 group"
           >
             <span className="relative w-10 h-10 flex items-center justify-center border border-[#9CB4A9]/40 group-hover:border-[#9CB4A9] transition shrink-0">
-              <span className="font-display text-[#9CB4A9] text-xl leading-none">A</span>
+              <span className="font-display text-[#9CB4A9] text-xl leading-none">O</span>
               <span className="absolute -bottom-1 -right-1 w-2 h-2 bg-[#9CB4A9]" />
             </span>
             <div className="text-start leading-tight">
               <div className="font-display text-base tracking-wide text-[#0A0A0A]">
-                Alux<span className="text-[#9CB4A9]"> Architectural</span>
+                Omera<span className="text-[#9CB4A9]"> Architectural</span>
               </div>
               <div className="text-[10px] uppercase tracking-[0.25em] text-[#0A0A0A]">
                 Aadesh Enterprise

@@ -3,7 +3,7 @@ import { dictionaries } from "@/i18n/translations";
 
 const I18nContext = createContext(null);
 
-const STORAGE_KEY = "alux.lang";
+const STORAGE_KEY = "omera.lang";
 const SUPPORTED = ["en", "ar"];
 
 export function I18nProvider({ children }) {

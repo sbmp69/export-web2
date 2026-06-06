@@ -17,8 +17,8 @@ export default function Contact() {
 
   const waText =
     lang === "ar"
-      ? "مرحباً Alux Architectural، أرغب في الاستفسار عن مجموعتكم من الأجهزة."
-      : "Hi Alux Architectural, I'd like to enquire about your hardware collection.";
+      ? "مرحباً Omera Exports، أرغب في الاستفسار عن مجموعتكم من الأجهزة."
+      : "Hi Omera Exports, I'd like to enquire about your hardware collection.";
   const WHATSAPP_LINK = `https://wa.me/91${PHONE}?text=${encodeURIComponent(waText)}`;
 
   const [form, setForm] = useState({
@@ -144,7 +144,7 @@ export default function Contact() {
 
           <div className="mt-8 border border-[#0A0A0A]/10 overflow-hidden" data-testid="contact-map">
             <iframe
-              title="Alux Architectural — Mumbai"
+              title="Omera Exports — Mumbai"
               src="https://www.google.com/maps?q=Mumbai,India&output=embed"
               width="100%"
               height="260"

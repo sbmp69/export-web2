@@ -24,8 +24,8 @@ export default function BrassRodsExport() {
   const r = t.rods;
   const whatsappText =
     lang === "ar"
-      ? "مرحباً Alux Architectural، أرغب في طلب عرض سعر تصدير لقضبان النحاس (المقاسات والكميات والتشطيبات ومدة التسليم)."
-      : "Hi Alux Architectural, I'd like to request an export quotation for Brass Rods (please share MOQ, sizes, finishes, lead time).";
+      ? "مرحباً Omera Exports، أرغب في طلب عرض سعر تصدير لقضبان النحاس (المقاسات والكميات والتشطيبات ومدة التسليم)."
+      : "Hi Omera Exports, I'd like to request an export quotation for Brass Rods (please share MOQ, sizes, finishes, lead time).";
   const WHATSAPP = `https://wa.me/91${PHONE}?text=${encodeURIComponent(whatsappText)}`;
 
   return (

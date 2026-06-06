@@ -71,7 +71,7 @@ export default function Experience() {
                   {e.captions[i]}
                 </span>
                 <span className="text-[10px] tracking-[0.3em] text-[#9CB4A9]">
-                  ALUX · 0{i + 1}
+                  OMERA · 0{i + 1}
                 </span>
               </figcaption>
             </motion.figure>

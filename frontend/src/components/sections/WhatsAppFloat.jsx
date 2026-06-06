@@ -8,8 +8,8 @@ export default function WhatsAppFloat() {
   const { t, lang } = useI18n();
   const text =
     lang === "ar"
-      ? "مرحباً Alux Architectural، أرغب في الاستفسار عن مجموعتكم من الأجهزة."
-      : "Hi Alux Architectural, I'd like to enquire about your hardware collection.";
+      ? "مرحباً Omera Exports، أرغب في الاستفسار عن مجموعتكم من الأجهزة."
+      : "Hi Omera Exports, I'd like to enquire about your hardware collection.";
   const LINK = `https://wa.me/91${PHONE}?text=${encodeURIComponent(text)}`;
 
   return (

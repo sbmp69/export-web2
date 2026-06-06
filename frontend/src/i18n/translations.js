@@ -1,4 +1,4 @@
-// Alux Architectural — i18n dictionaries (English + Arabic)
+// Omera Exports — i18n dictionaries (English + Arabic)
 // Each section's strings live under a namespace.
 
 export const en = {
@@ -46,12 +46,12 @@ export const en = {
   ],
 
   about: {
-    overline: "The House of Alux",
+    overline: "The House of Omera",
     title_a: "A studio devoted to the",
     title_b: " art of brass",
     title_c: "crafted for modern architecture.",
     body:
-      "Alux Architectural is the premium hardware atelier of Aadesh Enterprise. We design and manufacture solid-brass hinges, bolts, handles and door fittings for projects that refuse to compromise on tactility, finish or longevity. Every piece is finished by hand and calibrated to architectural-grade tolerances.",
+      "Omera Exports is the premium hardware atelier of Aadesh Enterprise. We design and manufacture solid-brass hinges, bolts, handles and door fittings for projects that refuse to compromise on tactility, finish or longevity. Every piece is finished by hand and calibrated to architectural-grade tolerances.",
     legacy_overline: "A Family Legacy",
     legacy_brand: "Aadesh Enterprise",
     atelier: "Atelier",
@@ -172,7 +172,7 @@ export const en = {
     overline: "The Craft Standard",
     title_a: "Why specifiers",
     title_b: "choose",
-    title_c: "Alux.",
+    title_c: "Omera.",
     body:
       "Six pillars that define how we manufacture, finish and deliver architectural hardware — from the foundry floor in Mumbai to your project site.",
     standard: "Standard",
@@ -193,14 +193,14 @@ export const en = {
     title_c: " meets the",
     title_d: "touch of brass.",
     body:
-      "A visual journal of the residences, hotels and ateliers using Alux hardware — from minimalist apartments in Mumbai to heritage interiors abroad.",
+      "A visual journal of the residences, hotels and ateliers using Omera hardware — from minimalist apartments in Mumbai to heritage interiors abroad.",
     captions: [
       "Threshold · Studio Apartment",
       "Living · Heritage Brass",
       "Detail · Hand-finished",
     ],
     quote: "Hardware is the jewellery of architecture. We design ours to be quietly inevitable.",
-    quote_by: "Atelier Alux · Mumbai",
+    quote_by: "Atelier Omera · Mumbai",
   },
 
   contact: {
