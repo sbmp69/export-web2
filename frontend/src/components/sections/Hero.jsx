@@ -42,7 +42,7 @@ export default function Hero() {
 
       <div className="relative z-10 max-w-[1400px] mx-auto px-6 lg:px-12 pt-40 pb-24 lg:pt-48 lg:pb-32 min-h-screen flex flex-col">
         {!isRTL && (
-          <div className="hidden lg:flex absolute left-12 top-1/2 -translate-y-1/2 -rotate-90 origin-left items-center gap-4 text-white/40 text-[10px] tracking-[0.4em] uppercase">
+          <div className="hidden lg:flex absolute left-12 top-1/2 -translate-y-1/2 -rotate-90 origin-left items-center gap-4 text-white text-[10px] tracking-[0.4em] uppercase">
             <div className="w-10 h-px bg-white/30" />
             <span>{h.side}</span>
           </div>
@@ -54,7 +54,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="overline mb-6 flex items-center gap-3"
         >
-          <span className="w-8 h-px bg-[#D4AF37]" />
+          <span className="w-8 h-px bg-[#9CB4A9]" />
           <span>{h.overline}</span>
         </motion.div>
 
@@ -69,14 +69,14 @@ export default function Hero() {
             <br />
             <span className="italic font-normal">{h.title_b}</span>
             <span className="brass-text">{h.title_c}</span>
-            <span className="text-[#D4AF37]">.</span>
+            <span className="text-[#9CB4A9]">.</span>
           </motion.h1>
 
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, delay: 0.7 }}
-            className="mt-8 max-w-xl text-white/70 text-base sm:text-lg leading-relaxed font-light"
+            className="mt-8 max-w-xl text-white text-base sm:text-lg leading-relaxed font-light"
           >
             {h.sub}
           </motion.p>
@@ -90,7 +90,7 @@ export default function Hero() {
             <button
               data-testid="hero-explore-button"
               onClick={() => scrollTo("products")}
-              className="group inline-flex items-center gap-3 bg-[#D4AF37] hover:bg-[#F3C844] text-black px-7 py-4 text-sm font-medium tracking-wide transition-colors"
+              className="group inline-flex items-center gap-3 bg-[#9CB4A9] hover:bg-[#8CA499] text-black px-7 py-4 text-sm font-medium tracking-wide transition-colors"
             >
               {h.explore}
               <ArrowUpRight
@@ -103,7 +103,7 @@ export default function Hero() {
               onClick={() => scrollTo("contact")}
               className="group inline-flex items-center gap-3 border border-white/25 hover:border-white/60 text-white px-7 py-4 text-sm font-medium tracking-wide transition-colors"
             >
-              <Phone size={16} className="text-[#D4AF37]" />
+              <Phone size={16} className="text-[#9CB4A9]" />
               {h.contact}
             </button>
           </motion.div>
@@ -121,7 +121,7 @@ export default function Hero() {
               <div className="font-display text-3xl md:text-4xl text-white tabular">
                 {s.v}
               </div>
-              <div className="mt-2 text-[11px] uppercase tracking-[0.25em] text-white/50">
+              <div className="mt-2 text-[11px] uppercase tracking-[0.25em] text-white">
                 {s.l}
               </div>
             </div>
@@ -129,10 +129,10 @@ export default function Hero() {
         </motion.div>
       </div>
 
-      <div className="absolute bottom-6 right-6 lg:right-12 z-10 hidden md:flex items-center gap-3 text-white/40 text-[10px] tracking-[0.3em] uppercase rtl:right-auto rtl:left-6 lg:rtl:left-12">
+      <div className="absolute bottom-6 right-6 lg:right-12 z-10 hidden md:flex items-center gap-3 text-white text-[10px] tracking-[0.3em] uppercase rtl:right-auto rtl:left-6 lg:rtl:left-12">
         <span>{h.scroll}</span>
         <div className="w-8 h-px bg-white/30 relative overflow-hidden">
-          <span className="absolute inset-0 bg-[#D4AF37] animate-[marquee_2s_linear_infinite]" />
+          <span className="absolute inset-0 bg-[#9CB4A9] animate-[marquee_2s_linear_infinite]" />
         </div>
       </div>
     </section>

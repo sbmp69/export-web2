@@ -62,22 +62,22 @@ export default function Products() {
   return (
     <section
       id="products"
-      className="relative py-24 lg:py-36 bg-[#0A0A0A]"
+      className="relative py-24 lg:py-36 bg-[#FFFFFF]"
       data-testid="products-section"
     >
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-14">
           <div>
             <div className="overline mb-4 flex items-center gap-3">
-              <span className="w-8 h-px bg-[#D4AF37]" /> {p.overline}
+              <span className="w-8 h-px bg-[#9CB4A9]" /> {p.overline}
             </div>
-            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl leading-[1.05] tracking-tight text-white font-light max-w-3xl">
+            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl leading-[1.05] tracking-tight text-[#0A0A0A] font-light max-w-3xl">
               {p.title_a}<span className="italic">{p.title_b}</span> —
               <br />
               <span className="brass-text">{p.title_c}</span>
             </h2>
           </div>
-          <p className="max-w-md text-white/60 leading-relaxed">{p.body}</p>
+          <p className="max-w-md text-[#0A0A0A] leading-relaxed">{p.body}</p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-5">
@@ -93,7 +93,7 @@ export default function Products() {
                 onMouseEnter={() => setHovered(s.code)}
                 onMouseLeave={() => setHovered(null)}
                 onClick={() => goTo(s.target)}
-                className={`relative group overflow-hidden border border-white/10 hover:border-[#D4AF37]/50 transition-all duration-500 bg-[#141414] cursor-pointer ${s.span}`}
+                className={`relative group overflow-hidden border border-[#0A0A0A]/10 hover:border-[#9CB4A9]/50 transition-all duration-500 bg-[#F5F5F5] cursor-pointer ${s.span}`}
                 data-testid={`product-card-${s.code}`}
               >
                 <div className={`relative ${s.height} w-full overflow-hidden`}>
@@ -104,26 +104,26 @@ export default function Products() {
                     loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent opacity-90" />
-                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors" />
+                  <div className="absolute inset-0 bg-[#FFFFFF]/0 group-hover:bg-black/20 transition-colors" />
 
                   <div className="absolute top-5 start-5 flex items-center gap-3">
-                    <span className="text-[10px] tracking-[0.3em] uppercase text-[#D4AF37]">
+                    <span className="text-[10px] tracking-[0.3em] uppercase text-[#9CB4A9]">
                       {p.series} · {s.code}
                     </span>
                   </div>
 
-                  <div className="absolute top-5 end-5 w-10 h-10 border border-white/20 flex items-center justify-center text-white/70 group-hover:border-[#D4AF37] group-hover:text-[#D4AF37] transition">
+                  <div className="absolute top-5 end-5 w-10 h-10 border border-white/20 flex items-center justify-center text-white group-hover:border-[#9CB4A9] group-hover:text-[#9CB4A9] transition">
                     <ArrowUpRight size={18} />
                   </div>
 
                   <div className="absolute bottom-0 left-0 right-0 p-6 lg:p-8">
-                    <div className="text-[10px] uppercase tracking-[0.3em] text-white/60 mb-2">
+                    <div className="text-[10px] uppercase tracking-[0.3em] text-white mb-2">
                       {item.tagline}
                     </div>
                     <h3 className="font-display text-2xl md:text-3xl lg:text-4xl text-white leading-tight">
                       {item.title}
                     </h3>
-                    <p className="mt-3 text-sm text-white/65 max-w-md leading-relaxed opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500">
+                    <p className="mt-3 text-sm text-white max-w-md leading-relaxed opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500">
                       {item.desc}
                     </p>
                   </div>
@@ -131,7 +131,7 @@ export default function Products() {
                   {hovered === s.code && (
                     <motion.div
                       layoutId="active-line"
-                      className="absolute bottom-0 left-0 right-0 h-px bg-[#D4AF37]"
+                      className="absolute bottom-0 left-0 right-0 h-px bg-[#9CB4A9]"
                     />
                   )}
                 </div>
@@ -140,12 +140,12 @@ export default function Products() {
           })}
         </div>
 
-        <div className="mt-14 flex flex-wrap items-center justify-between gap-6 pt-8 border-t border-white/10">
-          <p className="text-white/55 text-sm max-w-xl">{p.foot}</p>
+        <div className="mt-14 flex flex-wrap items-center justify-between gap-6 pt-8 border-t border-[#0A0A0A]/10">
+          <p className="text-[#0A0A0A] text-sm max-w-xl">{p.foot}</p>
           <button
             data-testid="products-cta-catalogue"
             onClick={() => navigate("/catalogue")}
-            className="inline-flex items-center gap-2 text-sm tracking-wide text-[#D4AF37] hover:text-[#F3C844] link-underline"
+            className="inline-flex items-center gap-2 text-sm tracking-wide text-[#9CB4A9] hover:text-[#8CA499] link-underline"
           >
             {p.cta}
             <ArrowUpRight size={16} />

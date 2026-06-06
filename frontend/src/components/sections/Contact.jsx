@@ -54,95 +54,95 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="relative py-24 lg:py-36 bg-[#0A0A0A] border-t border-white/10"
+      className="relative py-24 lg:py-36 bg-[#FFFFFF] border-t border-[#0A0A0A]/10"
       data-testid="contact-section"
     >
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
         <div className="lg:col-span-5">
           <div className="overline mb-4 flex items-center gap-3">
-            <span className="w-8 h-px bg-[#D4AF37]" /> {c.overline}
+            <span className="w-8 h-px bg-[#9CB4A9]" /> {c.overline}
           </div>
-          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl leading-[1.05] tracking-tight text-white font-light">
+          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl leading-[1.05] tracking-tight text-[#0A0A0A] font-light">
             {c.title_a}
             <br />
             <span className="italic">{c.title_b}</span>
           </h2>
-          <p className="mt-6 text-white/60 max-w-md leading-relaxed">{c.body}</p>
+          <p className="mt-6 text-[#0A0A0A] max-w-md leading-relaxed">{c.body}</p>
 
-          <div className="mt-10 space-y-1 border-t border-white/10">
+          <div className="mt-10 space-y-1 border-t border-[#0A0A0A]/10">
             <a
               href={WHATSAPP_LINK}
               target="_blank"
               rel="noreferrer"
               data-testid="contact-whatsapp-link"
-              className="group flex items-center justify-between py-5 border-b border-white/10 hover:border-[#D4AF37]/40 transition-colors"
+              className="group flex items-center justify-between py-5 border-b border-[#0A0A0A]/10 hover:border-[#9CB4A9]/40 transition-colors"
             >
               <div className="flex items-center gap-4">
-                <div className="w-11 h-11 border border-white/15 group-hover:border-[#25D366] flex items-center justify-center transition">
+                <div className="w-11 h-11 border border-[#0A0A0A]/15 group-hover:border-[#25D366] flex items-center justify-center transition">
                   <MessageCircle size={18} className="text-[#25D366]" />
                 </div>
                 <div>
-                  <div className="text-[10px] uppercase tracking-[0.3em] text-white/40">
+                  <div className="text-[10px] uppercase tracking-[0.3em] text-[#0A0A0A]">
                     {c.whatsapp}
                   </div>
-                  <div className="text-white text-base">+91 {PHONE}</div>
+                  <div className="text-[#0A0A0A] text-base">+91 {PHONE}</div>
                 </div>
               </div>
-              <ArrowUpRight size={18} className="text-white/40 group-hover:text-[#D4AF37] transition" />
+              <ArrowUpRight size={18} className="text-[#0A0A0A] group-hover:text-[#9CB4A9] transition" />
             </a>
 
             <a
               href={`tel:+91${PHONE}`}
               data-testid="contact-phone-link"
-              className="group flex items-center justify-between py-5 border-b border-white/10 hover:border-[#D4AF37]/40 transition-colors"
+              className="group flex items-center justify-between py-5 border-b border-[#0A0A0A]/10 hover:border-[#9CB4A9]/40 transition-colors"
             >
               <div className="flex items-center gap-4">
-                <div className="w-11 h-11 border border-white/15 group-hover:border-[#D4AF37] flex items-center justify-center transition">
-                  <Phone size={18} className="text-[#D4AF37]" />
+                <div className="w-11 h-11 border border-[#0A0A0A]/15 group-hover:border-[#9CB4A9] flex items-center justify-center transition">
+                  <Phone size={18} className="text-[#9CB4A9]" />
                 </div>
                 <div>
-                  <div className="text-[10px] uppercase tracking-[0.3em] text-white/40">
+                  <div className="text-[10px] uppercase tracking-[0.3em] text-[#0A0A0A]">
                     {c.phone}
                   </div>
-                  <div className="text-white text-base">+91 {PHONE}</div>
+                  <div className="text-[#0A0A0A] text-base">+91 {PHONE}</div>
                 </div>
               </div>
-              <ArrowUpRight size={18} className="text-white/40 group-hover:text-[#D4AF37] transition" />
+              <ArrowUpRight size={18} className="text-[#0A0A0A] group-hover:text-[#9CB4A9] transition" />
             </a>
 
             <a
               href={`mailto:${EMAIL}`}
               data-testid="contact-email-link"
-              className="group flex items-center justify-between py-5 border-b border-white/10 hover:border-[#D4AF37]/40 transition-colors"
+              className="group flex items-center justify-between py-5 border-b border-[#0A0A0A]/10 hover:border-[#9CB4A9]/40 transition-colors"
             >
               <div className="flex items-center gap-4">
-                <div className="w-11 h-11 border border-white/15 group-hover:border-[#D4AF37] flex items-center justify-center transition">
-                  <Mail size={18} className="text-[#D4AF37]" />
+                <div className="w-11 h-11 border border-[#0A0A0A]/15 group-hover:border-[#9CB4A9] flex items-center justify-center transition">
+                  <Mail size={18} className="text-[#9CB4A9]" />
                 </div>
                 <div>
-                  <div className="text-[10px] uppercase tracking-[0.3em] text-white/40">
+                  <div className="text-[10px] uppercase tracking-[0.3em] text-[#0A0A0A]">
                     {c.email}
                   </div>
-                  <div className="text-white text-base break-all">{EMAIL}</div>
+                  <div className="text-[#0A0A0A] text-base break-all">{EMAIL}</div>
                 </div>
               </div>
-              <ArrowUpRight size={18} className="text-white/40 group-hover:text-[#D4AF37] transition" />
+              <ArrowUpRight size={18} className="text-[#0A0A0A] group-hover:text-[#9CB4A9] transition" />
             </a>
 
             <div className="flex items-center gap-4 py-5">
-              <div className="w-11 h-11 border border-white/15 flex items-center justify-center">
-                <MapPin size={18} className="text-[#D4AF37]" />
+              <div className="w-11 h-11 border border-[#0A0A0A]/15 flex items-center justify-center">
+                <MapPin size={18} className="text-[#9CB4A9]" />
               </div>
               <div>
-                <div className="text-[10px] uppercase tracking-[0.3em] text-white/40">
+                <div className="text-[10px] uppercase tracking-[0.3em] text-[#0A0A0A]">
                   {c.atelier}
                 </div>
-                <div className="text-white text-base">{c.location}</div>
+                <div className="text-[#0A0A0A] text-base">{c.location}</div>
               </div>
             </div>
           </div>
 
-          <div className="mt-8 border border-white/10 overflow-hidden" data-testid="contact-map">
+          <div className="mt-8 border border-[#0A0A0A]/10 overflow-hidden" data-testid="contact-map">
             <iframe
               title="Alux Architectural — Mumbai"
               src="https://www.google.com/maps?q=Mumbai,India&output=embed"
@@ -164,15 +164,15 @@ export default function Contact() {
           className="lg:col-span-7 lg:ps-8"
           data-testid="inquiry-form"
         >
-          <div className="border border-white/10 p-8 lg:p-12 bg-[#0E0E0E]">
-            <div className="flex items-center justify-between mb-8 pb-6 border-b border-white/10">
+          <div className="border border-[#0A0A0A]/10 p-8 lg:p-12 bg-[#FAFAFA]">
+            <div className="flex items-center justify-between mb-8 pb-6 border-b border-[#0A0A0A]/10">
               <div>
                 <div className="overline mb-2">{c.form_overline}</div>
-                <div className="font-display text-2xl text-white">
+                <div className="font-display text-2xl text-[#0A0A0A]">
                   {c.form_title}
                 </div>
               </div>
-              <span className="text-[10px] uppercase tracking-[0.3em] text-white/40">
+              <span className="text-[10px] uppercase tracking-[0.3em] text-[#0A0A0A]">
                 {c.form_id}
               </span>
             </div>
@@ -208,7 +208,7 @@ export default function Contact() {
             </div>
 
             <div className="mt-6">
-              <label className="text-[10px] uppercase tracking-[0.3em] text-white/50 block mb-3">
+              <label className="text-[10px] uppercase tracking-[0.3em] text-[#0A0A0A] block mb-3">
                 {c.f_interest}
               </label>
               <div className="flex flex-wrap gap-2">
@@ -222,8 +222,8 @@ export default function Contact() {
                       onClick={() => update("interest", active ? "" : opt)}
                       className={`px-4 py-2 text-xs tracking-wide border transition-colors ${
                         active
-                          ? "bg-[#D4AF37] text-black border-[#D4AF37]"
-                          : "border-white/15 text-white/70 hover:border-[#D4AF37]/60 hover:text-white"
+                          ? "bg-[#9CB4A9] text-black border-[#9CB4A9]"
+                          : "border-[#0A0A0A]/15 text-[#0A0A0A] hover:border-[#9CB4A9]/60 hover:text-[#0A0A0A]"
                       }`}
                     >
                       {opt}
@@ -234,8 +234,8 @@ export default function Contact() {
             </div>
 
             <div className="mt-6">
-              <label className="text-[10px] uppercase tracking-[0.3em] text-white/50 block mb-3">
-                {c.f_message} <span className="text-[#D4AF37]">*</span>
+              <label className="text-[10px] uppercase tracking-[0.3em] text-[#0A0A0A] block mb-3">
+                {c.f_message} <span className="text-[#9CB4A9]">*</span>
               </label>
               <textarea
                 required
@@ -244,17 +244,17 @@ export default function Contact() {
                 onChange={(e) => update("message", e.target.value)}
                 placeholder={c.f_placeholder}
                 data-testid="form-message"
-                className="w-full bg-transparent border border-white/15 focus:border-[#D4AF37] focus:ring-1 focus:ring-[#D4AF37] outline-none p-4 text-white placeholder:text-white/30 transition-colors resize-none"
+                className="w-full bg-transparent border border-[#0A0A0A]/15 focus:border-[#9CB4A9] focus:ring-1 focus:ring-[#9CB4A9] outline-none p-4 text-[#0A0A0A] placeholder:text-[#0A0A0A] transition-colors resize-none"
               />
             </div>
 
             <div className="mt-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-              <p className="text-xs text-white/40 max-w-sm">{c.consent}</p>
+              <p className="text-xs text-[#0A0A0A] max-w-sm">{c.consent}</p>
               <button
                 type="submit"
                 disabled={loading}
                 data-testid="form-submit"
-                className="group inline-flex items-center justify-center gap-3 bg-[#D4AF37] hover:bg-[#F3C844] disabled:opacity-50 text-black px-8 py-4 text-sm font-medium tracking-wide transition-colors"
+                className="group inline-flex items-center justify-center gap-3 bg-[#9CB4A9] hover:bg-[#8CA499] disabled:opacity-50 text-black px-8 py-4 text-sm font-medium tracking-wide transition-colors"
               >
                 {loading ? c.submitting : c.submit}
                 <Send size={16} className="transition-transform group-hover:translate-x-0.5" />
@@ -270,8 +270,8 @@ export default function Contact() {
 function Field({ label, required, type = "text", value, onChange, testid }) {
   return (
     <div>
-      <label className="text-[10px] uppercase tracking-[0.3em] text-white/50 block mb-3">
-        {label} {required && <span className="text-[#D4AF37]">*</span>}
+      <label className="text-[10px] uppercase tracking-[0.3em] text-[#0A0A0A] block mb-3">
+        {label} {required && <span className="text-[#9CB4A9]">*</span>}
       </label>
       <input
         type={type}
@@ -279,7 +279,7 @@ function Field({ label, required, type = "text", value, onChange, testid }) {
         value={value}
         onChange={(e) => onChange(e.target.value)}
         data-testid={testid}
-        className="w-full bg-transparent border-b border-white/15 focus:border-[#D4AF37] outline-none py-3 text-white placeholder:text-white/30 transition-colors"
+        className="w-full bg-transparent border-b border-[#0A0A0A]/15 focus:border-[#9CB4A9] outline-none py-3 text-[#0A0A0A] placeholder:text-[#0A0A0A] transition-colors"
       />
     </div>
   );

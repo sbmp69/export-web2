@@ -15,14 +15,14 @@ function LangToggle({ compact = false }) {
   const { lang, setLang } = useI18n();
   return (
     <div
-      className={`inline-flex items-center border border-white/15 ${compact ? "" : "hover:border-[#D4AF37]/60"} transition-colors`}
+      className={`inline-flex items-center border border-[#0A0A0A]/15 ${compact ? "" : "hover:border-[#9CB4A9]/60"} transition-colors`}
       data-testid="lang-toggle"
     >
       <button
         onClick={() => setLang("en")}
         data-testid="lang-en"
         className={`px-3 py-1.5 text-[11px] tracking-[0.2em] uppercase transition-colors ${
-          lang === "en" ? "bg-[#D4AF37] text-black" : "text-white/70 hover:text-white"
+          lang === "en" ? "bg-[#9CB4A9] text-black" : "text-[#0A0A0A] hover:text-[#0A0A0A]"
         }`}
       >
         EN
@@ -31,7 +31,7 @@ function LangToggle({ compact = false }) {
         onClick={() => setLang("ar")}
         data-testid="lang-ar"
         className={`px-3 py-1.5 text-[11px] tracking-[0.2em] uppercase transition-colors ${
-          lang === "ar" ? "bg-[#D4AF37] text-black" : "text-white/70 hover:text-white"
+          lang === "ar" ? "bg-[#9CB4A9] text-black" : "text-[#0A0A0A] hover:text-[#0A0A0A]"
         }`}
       >
         AR
@@ -71,7 +71,7 @@ export default function Navbar() {
         transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
           scrolled
-            ? "backdrop-blur-xl bg-black/70 border-b border-white/10"
+            ? "backdrop-blur-xl bg-[#FFFFFF]/70 border-b border-[#0A0A0A]/10"
             : "bg-transparent"
         }`}
         data-testid="main-navbar"
@@ -82,15 +82,15 @@ export default function Navbar() {
             data-testid="nav-logo"
             className="flex items-center gap-3 group"
           >
-            <span className="relative w-10 h-10 flex items-center justify-center border border-[#D4AF37]/40 group-hover:border-[#D4AF37] transition shrink-0">
-              <span className="font-display text-[#D4AF37] text-xl leading-none">A</span>
-              <span className="absolute -bottom-1 -right-1 w-2 h-2 bg-[#D4AF37]" />
+            <span className="relative w-10 h-10 flex items-center justify-center border border-[#9CB4A9]/40 group-hover:border-[#9CB4A9] transition shrink-0">
+              <span className="font-display text-[#9CB4A9] text-xl leading-none">A</span>
+              <span className="absolute -bottom-1 -right-1 w-2 h-2 bg-[#9CB4A9]" />
             </span>
             <div className="text-start leading-tight">
-              <div className="font-display text-base tracking-wide text-white">
-                Alux<span className="text-[#D4AF37]"> Architectural</span>
+              <div className="font-display text-base tracking-wide text-[#0A0A0A]">
+                Alux<span className="text-[#9CB4A9]"> Architectural</span>
               </div>
-              <div className="text-[10px] uppercase tracking-[0.25em] text-white/50">
+              <div className="text-[10px] uppercase tracking-[0.25em] text-[#0A0A0A]">
                 Aadesh Enterprise
               </div>
             </div>
@@ -102,7 +102,7 @@ export default function Navbar() {
                 <button
                   data-testid={`nav-link-${id}`}
                   onClick={() => handleScrollTo(id)}
-                  className="text-sm tracking-wide text-white/70 hover:text-white link-underline transition"
+                  className="text-sm tracking-wide text-[#0A0A0A] hover:text-[#0A0A0A] link-underline transition"
                 >
                   {t.nav[id]}
                 </button>
@@ -111,7 +111,7 @@ export default function Navbar() {
             <li>
               <button
                 onClick={() => navigate("/catalogue")}
-                className="text-sm tracking-wide text-[#D4AF37] hover:text-[#F3C844] link-underline transition font-medium"
+                className="text-sm tracking-wide text-[#9CB4A9] hover:text-[#8CA499] link-underline transition font-medium"
               >
                 {t.nav.catalogue}
               </button>
@@ -123,7 +123,7 @@ export default function Navbar() {
             <button
               data-testid="nav-cta-inquire"
               onClick={() => handleScrollTo("contact")}
-              className="px-5 py-2.5 bg-[#D4AF37] hover:bg-[#F3C844] text-black text-sm font-medium tracking-wide transition-colors"
+              className="px-5 py-2.5 bg-[#9CB4A9] hover:bg-[#8CA499] text-black text-sm font-medium tracking-wide transition-colors"
             >
               {t.nav.cta}
             </button>
@@ -134,7 +134,7 @@ export default function Navbar() {
             <button
               data-testid="nav-mobile-toggle"
               onClick={() => setOpen((s) => !s)}
-              className="text-white p-2"
+              className="text-[#0A0A0A] p-2"
               aria-label="Toggle menu"
             >
               {open ? <X size={22} /> : <Menu size={22} />}
@@ -149,7 +149,7 @@ export default function Navbar() {
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
-            className="fixed top-20 left-0 right-0 z-40 lg:hidden backdrop-blur-xl bg-black/90 border-b border-white/10"
+            className="fixed top-20 left-0 right-0 z-40 lg:hidden backdrop-blur-xl bg-[#FFFFFF]/90 border-b border-[#0A0A0A]/10"
             data-testid="mobile-menu"
           >
             <ul className="px-6 py-6 flex flex-col gap-5">
@@ -161,7 +161,7 @@ export default function Navbar() {
                       setOpen(false);
                       handleScrollTo(id);
                     }}
-                    className="text-base text-white/80"
+                    className="text-base text-[#0A0A0A]"
                   >
                     {t.nav[id]}
                   </button>
@@ -173,7 +173,7 @@ export default function Navbar() {
                     setOpen(false);
                     navigate("/catalogue");
                   }}
-                  className="text-base text-[#D4AF37] font-medium"
+                  className="text-base text-[#9CB4A9] font-medium"
                 >
                   {t.nav.catalogue}
                 </button>
@@ -185,7 +185,7 @@ export default function Navbar() {
                     setOpen(false);
                     handleScrollTo("contact");
                   }}
-                  className="mt-2 px-5 py-3 bg-[#D4AF37] text-black text-sm font-medium"
+                  className="mt-2 px-5 py-3 bg-[#9CB4A9] text-black text-sm font-medium"
                 >
                   {t.nav.cta}
                 </button>

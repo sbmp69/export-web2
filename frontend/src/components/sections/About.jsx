@@ -14,7 +14,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="relative py-24 lg:py-36 bg-[#0A0A0A]"
+      className="relative py-24 lg:py-36 bg-[#FFFFFF]"
       data-testid="about-section"
     >
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
@@ -25,7 +25,7 @@ export default function About() {
           transition={{ duration: 0.9 }}
           className="lg:col-span-5 relative"
         >
-          <div className="relative overflow-hidden border border-white/10">
+          <div className="relative overflow-hidden border border-[#0A0A0A]/10">
             <img
               src={IMG}
               alt="Crafted brass architectural detail"
@@ -39,12 +39,12 @@ export default function About() {
             </div>
           </div>
 
-          <div className="absolute -bottom-6 -right-6 hidden md:block w-40 h-40 border border-[#D4AF37]/40 bg-[#0A0A0A] p-5">
+          <div className="absolute -bottom-6 -right-6 hidden md:block w-40 h-40 border border-[#9CB4A9]/40 bg-[#FFFFFF] p-5">
             <div className="overline mb-2">{a.atelier}</div>
-            <div className="font-display text-2xl text-white leading-tight">
+            <div className="font-display text-2xl text-[#0A0A0A] leading-tight">
               {a.city_a}
               <br />
-              <span className="text-[#D4AF37]">{a.city_b}</span>
+              <span className="text-[#9CB4A9]">{a.city_b}</span>
             </div>
           </div>
         </motion.div>
@@ -57,7 +57,7 @@ export default function About() {
             transition={{ duration: 0.7 }}
             className="overline mb-6 flex items-center gap-3"
           >
-            <span className="w-8 h-px bg-[#D4AF37]" /> {a.overline}
+            <span className="w-8 h-px bg-[#9CB4A9]" /> {a.overline}
           </motion.div>
 
           <motion.h2
@@ -65,7 +65,7 @@ export default function About() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.9 }}
-            className="font-display text-4xl md:text-5xl lg:text-6xl leading-[1.05] tracking-tight text-white font-light"
+            className="font-display text-4xl md:text-5xl lg:text-6xl leading-[1.05] tracking-tight text-[#0A0A0A] font-light"
           >
             {a.title_a}
             <span className="italic">{a.title_b}</span> —
@@ -78,7 +78,7 @@ export default function About() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.9, delay: 0.1 }}
-            className="mt-8 max-w-2xl text-white/65 text-base lg:text-lg leading-relaxed font-light"
+            className="mt-8 max-w-2xl text-[#0A0A0A] text-base lg:text-lg leading-relaxed font-light"
           >
             {a.body}
           </motion.p>
@@ -93,23 +93,23 @@ export default function About() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: i * 0.08 }}
-                  className="group p-5 border border-white/10 hover:border-[#D4AF37]/50 transition-colors"
+                  className="group p-5 border border-[#0A0A0A]/10 hover:border-[#9CB4A9]/50 transition-colors"
                   data-testid={`audience-${i}`}
                 >
-                  <Icon size={22} className="text-[#D4AF37] group-hover:scale-110 transition-transform" />
-                  <div className="mt-4 text-sm text-white/80">{label}</div>
+                  <Icon size={22} className="text-[#9CB4A9] group-hover:scale-110 transition-transform" />
+                  <div className="mt-4 text-sm text-[#0A0A0A]">{label}</div>
                 </motion.div>
               );
             })}
           </div>
 
-          <div className="mt-12 grid grid-cols-3 gap-6 lg:gap-10 pt-8 border-t border-white/10">
+          <div className="mt-12 grid grid-cols-3 gap-6 lg:gap-10 pt-8 border-t border-[#0A0A0A]/10">
             {a.pillars.map((s, i) => (
               <div key={i}>
-                <div className="font-display italic text-xl text-[#D4AF37]">
+                <div className="font-display italic text-xl text-[#9CB4A9]">
                   {s.v}
                 </div>
-                <div className="mt-1 text-xs uppercase tracking-[0.2em] text-white/50">
+                <div className="mt-1 text-xs uppercase tracking-[0.2em] text-[#0A0A0A]">
                   {s.l}
                 </div>
               </div>

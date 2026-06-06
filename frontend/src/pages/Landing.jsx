@@ -13,7 +13,7 @@ import WhatsAppFloat from "@/components/sections/WhatsAppFloat";
 
 export default function Landing() {
   return (
-    <main className="bg-[#0A0A0A] text-[#FDFBF7] font-body" data-testid="landing-page">
+    <main className="bg-[#FFFFFF] text-[#0A0A0A] font-body" data-testid="landing-page">
       <Navbar />
       <Hero />
       <Marquee />

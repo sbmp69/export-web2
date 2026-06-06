@@ -698,5 +698,93 @@
       "Hardware: 8 or 10 Countersunk Screw Holes",
       "Suitability: Wooden doors, flush doors, main doors (Residential & Commercial)"
     ]
+  },
+  {
+    "id": 61,
+    "image": "/generated/pull_handle_img_1.jpg",
+    "name": "Signature Knurled Pull Handle",
+    "description": "Premium knurled pull handle with distinct grip texture, ideal for statement doors and cabinetry.",
+    "material": "Solid Brass",
+    "finish": "Gold / Matte Black",
+    "type": "Pull Handle",
+    "category": "Pull Handle",
+    "application": "Cabinets / Main Doors"
+  },
+  {
+    "id": 62,
+    "image": "/generated/pull_handle_img_2.jpg",
+    "name": "Architectural T-Bar Pull Handle",
+    "description": "A refined T-bar design featuring industrial knurling for modern elegance.",
+    "material": "Solid Brass",
+    "finish": "Gold / Matte Black / Antique",
+    "type": "Pull Handle",
+    "category": "Pull Handle",
+    "application": "Drawers / Cabinets"
+  },
+  {
+    "id": 63,
+    "image": "/generated/pull_handle_img_3.jpg",
+    "name": "Textured Statement Pull Handle",
+    "description": "Heavy-duty textured handle providing exceptional tactile feedback and visual impact.",
+    "material": "Solid Brass",
+    "finish": "Black / Bronze / Gold",
+    "type": "Pull Handle",
+    "category": "Pull Handle",
+    "application": "Luxury Interiors"
+  },
+  {
+    "id": 64,
+    "image": "/generated/brass_rod_1.png",
+    "name": "Square Brass Rod",
+    "description": "Solid square brass rods for architectural and engineering applications.",
+    "material": "Solid Brass",
+    "finish": "Raw Brass / Polished",
+    "type": "Brass Rod",
+    "category": "Brass Rod",
+    "application": "Hardware / Structures"
+  },
+  {
+    "id": 65,
+    "image": "/generated/brass_rod_2.jpg",
+    "name": "Flat Brass Bar",
+    "description": "Rectangular flat brass bars offering excellent machinability and finish.",
+    "material": "Solid Brass",
+    "finish": "Raw Brass",
+    "type": "Brass Rod",
+    "category": "Brass Rod",
+    "application": "Fabrication / Edging"
+  },
+  {
+    "id": 66,
+    "image": "/generated/brass_rod_3.jpg",
+    "name": "Solid Round Brass Rod",
+    "description": "Cylindrical brass rods known for superior corrosion resistance and strength.",
+    "material": "Solid Brass",
+    "finish": "Raw Brass / Satin",
+    "type": "Brass Rod",
+    "category": "Brass Rod",
+    "application": "Machining / Fittings"
+  },
+  {
+    "id": 67,
+    "image": "/generated/brass_rod_4.jpg",
+    "name": "Precision Round Brass Rod",
+    "description": "High precision extruded round brass rods for demanding specifications.",
+    "material": "Solid Brass",
+    "finish": "Polished Brass",
+    "type": "Brass Rod",
+    "category": "Brass Rod",
+    "application": "OEM / Components"
+  },
+  {
+    "id": 68,
+    "image": "/generated/brass_rod_5.jpg",
+    "name": "Hexagonal Brass Rod",
+    "description": "Premium hexagonal brass rods offering easy gripping for fasteners and fittings.",
+    "material": "Solid Brass",
+    "finish": "Raw Brass",
+    "type": "Brass Rod",
+    "category": "Brass Rod",
+    "application": "Fasteners / Decor"
   }
 ]

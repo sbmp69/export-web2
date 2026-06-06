@@ -27,22 +27,22 @@ export default function Experience() {
   return (
     <section
       id="experience"
-      className="relative py-24 lg:py-36 bg-[#0A0A0A] border-t border-white/10 overflow-hidden"
+      className="relative py-24 lg:py-36 bg-[#FFFFFF] border-t border-[#0A0A0A]/10 overflow-hidden"
       data-testid="experience-section"
     >
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 mb-14 items-end">
           <div className="lg:col-span-7">
             <div className="overline mb-4 flex items-center gap-3">
-              <span className="w-8 h-px bg-[#D4AF37]" /> {e.overline}
+              <span className="w-8 h-px bg-[#9CB4A9]" /> {e.overline}
             </div>
-            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl leading-[1.05] tracking-tight text-white font-light">
+            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl leading-[1.05] tracking-tight text-[#0A0A0A] font-light">
               {e.title_a}<span className="italic">{e.title_b}</span>{e.title_c}
               <br />
               <span className="brass-text">{e.title_d}</span>
             </h2>
           </div>
-          <p className="lg:col-span-5 text-white/60 leading-relaxed">{e.body}</p>
+          <p className="lg:col-span-5 text-[#0A0A0A] leading-relaxed">{e.body}</p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-5">
@@ -53,7 +53,7 @@ export default function Experience() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.8, delay: i * 0.08 }}
-              className={`relative overflow-hidden border border-white/10 group ${g.span}`}
+              className={`relative overflow-hidden border border-[#0A0A0A]/10 group ${g.span}`}
               data-testid={`experience-image-${i}`}
             >
               <img
@@ -64,10 +64,10 @@ export default function Experience() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent" />
               <figcaption className="absolute bottom-5 left-5 right-5 flex items-center justify-between">
-                <span className="text-xs uppercase tracking-[0.3em] text-white/70">
+                <span className="text-xs uppercase tracking-[0.3em] text-white">
                   {e.captions[i]}
                 </span>
-                <span className="text-[10px] tracking-[0.3em] text-[#D4AF37]">
+                <span className="text-[10px] tracking-[0.3em] text-[#9CB4A9]">
                   ALUX · 0{i + 1}
                 </span>
               </figcaption>
@@ -83,11 +83,11 @@ export default function Experience() {
           className="mt-20 max-w-4xl mx-auto text-center px-4"
           data-testid="experience-quote"
         >
-          <div className="text-[#D4AF37] text-3xl mb-4">“</div>
-          <p className="font-display text-2xl md:text-3xl lg:text-4xl text-white/85 italic leading-relaxed font-light">
+          <div className="text-[#9CB4A9] text-3xl mb-4">“</div>
+          <p className="font-display text-2xl md:text-3xl lg:text-4xl text-[#0A0A0A] italic leading-relaxed font-light">
             {e.quote}
           </p>
-          <div className="mt-6 text-[10px] uppercase tracking-[0.3em] text-white/40">
+          <div className="mt-6 text-[10px] uppercase tracking-[0.3em] text-[#0A0A0A]">
             {e.quote_by}
           </div>
         </motion.blockquote>

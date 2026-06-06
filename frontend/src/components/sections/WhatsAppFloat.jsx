@@ -25,8 +25,8 @@ export default function WhatsAppFloat() {
       aria-label="Chat on WhatsApp"
     >
       <span className="absolute inset-0 rounded-full pulse-glow" />
-      <span className="relative flex items-center gap-3 bg-[#25D366] hover:bg-[#1FBE5C] text-white ps-3 pe-5 py-3 rounded-full shadow-2xl transition-colors">
-        <span className="w-9 h-9 rounded-full bg-white/15 flex items-center justify-center">
+      <span className="relative flex items-center gap-3 bg-[#25D366] hover:bg-[#1FBE5C] text-[#0A0A0A] ps-3 pe-5 py-3 rounded-full shadow-2xl transition-colors">
+        <span className="w-9 h-9 rounded-full bg-[#0A0A0A]/15 flex items-center justify-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"

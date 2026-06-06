@@ -31,7 +31,7 @@ export default function BrassRodsExport() {
   return (
     <section
       id="rods"
-      className="relative py-24 lg:py-36 bg-[#080808] border-t border-white/10 overflow-hidden"
+      className="relative py-24 lg:py-36 bg-[#FFFFFF] border-t border-[#0A0A0A]/10 overflow-hidden"
       data-testid="rods-section"
     >
       <div
@@ -47,15 +47,15 @@ export default function BrassRodsExport() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-end mb-14">
           <div className="lg:col-span-7">
             <div className="overline mb-4 flex items-center gap-3">
-              <span className="w-8 h-px bg-[#D4AF37]" /> {r.overline}
+              <span className="w-8 h-px bg-[#9CB4A9]" /> {r.overline}
             </div>
-            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl leading-[1.05] tracking-tight text-white font-light">
+            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl leading-[1.05] tracking-tight text-[#0A0A0A] font-light">
               {r.title_a}
               <br />
               <span className="italic">{r.title_b}</span>{" "}
               <span className="brass-text">{r.title_c}</span>
             </h2>
-            <p className="mt-6 max-w-xl text-white/65 leading-relaxed">
+            <p className="mt-6 max-w-xl text-[#0A0A0A] leading-relaxed">
               {r.body}
             </p>
           </div>
@@ -66,26 +66,26 @@ export default function BrassRodsExport() {
               return (
                 <div
                   key={i}
-                  className="p-5 border border-white/10 hover:border-[#D4AF37]/50 transition-colors"
+                  className="p-5 border border-[#0A0A0A]/10 hover:border-[#9CB4A9]/50 transition-colors"
                   data-testid={`export-badge-${i}`}
                 >
-                  <Icon size={20} className="text-[#D4AF37]" />
-                  <div className="mt-3 text-sm text-white/80">{label}</div>
+                  <Icon size={20} className="text-[#9CB4A9]" />
+                  <div className="mt-3 text-sm text-[#0A0A0A]">{label}</div>
                 </div>
               );
             })}
           </div>
         </div>
 
-        <div className="mb-14 border-y border-white/10 py-4 overflow-hidden">
+        <div className="mb-14 border-y border-[#0A0A0A]/10 py-4 overflow-hidden">
           <div className="flex items-center gap-8 marquee whitespace-nowrap">
             {[...r.destinations, ...r.destinations].map((d, i) => (
               <span
                 key={i}
-                className="text-[11px] tracking-[0.3em] uppercase text-white/50 flex items-center gap-8 shrink-0"
+                className="text-[11px] tracking-[0.3em] uppercase text-[#0A0A0A] flex items-center gap-8 shrink-0"
               >
                 {d}
-                <span className="text-[#D4AF37]">◆</span>
+                <span className="text-[#9CB4A9]">◆</span>
               </span>
             ))}
           </div>
@@ -99,7 +99,7 @@ export default function BrassRodsExport() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.7, delay: i * 0.08 }}
-              className="group relative overflow-hidden border border-white/10 hover:border-[#D4AF37]/50 bg-[#0E0E0E] transition-colors"
+              className="group relative overflow-hidden border border-[#0A0A0A]/10 hover:border-[#9CB4A9]/50 bg-[#FAFAFA] transition-colors"
               data-testid={`rod-type-${ROD_CODES[i]}`}
             >
               <div className="relative h-[300px] overflow-hidden">
@@ -109,33 +109,33 @@ export default function BrassRodsExport() {
                   loading="lazy"
                   className="w-full h-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.08]"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent" />
-                <span className="absolute top-4 start-4 text-[10px] tracking-[0.3em] uppercase text-[#D4AF37]">
+                <div className="absolute inset-0 bg-gradient-to-t from-[#FFFFFF] via-[#FFFFFF]/30 to-transparent" />
+                <span className="absolute top-4 start-4 text-[10px] tracking-[0.3em] uppercase text-[#9CB4A9]">
                   {ROD_CODES[i]}
                 </span>
               </div>
               <div className="p-6">
-                <h3 className="font-display text-xl text-white leading-snug">
+                <h3 className="font-display text-xl text-[#0A0A0A] leading-snug">
                   {rod.title}
                 </h3>
                 <dl className="mt-4 space-y-3 text-xs">
                   <div className="flex items-start justify-between gap-4">
-                    <dt className="uppercase tracking-[0.2em] text-white/40">
+                    <dt className="uppercase tracking-[0.2em] text-[#0A0A0A]">
                       {r.size}
                     </dt>
-                    <dd className="text-white/80 text-end">{rod.dims}</dd>
+                    <dd className="text-[#0A0A0A] text-end">{rod.dims}</dd>
                   </div>
                   <div className="flex items-start justify-between gap-4">
-                    <dt className="uppercase tracking-[0.2em] text-white/40">
+                    <dt className="uppercase tracking-[0.2em] text-[#0A0A0A]">
                       {r.grades}
                     </dt>
-                    <dd className="text-white/80 text-end">{rod.grades}</dd>
+                    <dd className="text-[#0A0A0A] text-end">{rod.grades}</dd>
                   </div>
                 </dl>
                 <button
                   onClick={() => goTo("contact")}
                   data-testid={`rod-inquire-${ROD_CODES[i]}`}
-                  className="mt-6 w-full inline-flex items-center justify-between text-xs tracking-[0.2em] uppercase text-[#D4AF37] hover:text-[#F3C844] transition"
+                  className="mt-6 w-full inline-flex items-center justify-between text-xs tracking-[0.2em] uppercase text-[#9CB4A9] hover:text-[#8CA499] transition"
                 >
                   {r.inquire}
                   <ArrowUpRight size={14} />
@@ -152,15 +152,15 @@ export default function BrassRodsExport() {
           transition={{ duration: 0.8 }}
           className="mt-16 grid grid-cols-1 lg:grid-cols-12 gap-10"
         >
-          <div className="lg:col-span-8 border border-white/10 bg-[#0B0B0B]">
-            <div className="flex items-center justify-between px-6 lg:px-8 py-5 border-b border-white/10">
+          <div className="lg:col-span-8 border border-[#0A0A0A]/10 bg-[#FFFFFF]">
+            <div className="flex items-center justify-between px-6 lg:px-8 py-5 border-b border-[#0A0A0A]/10">
               <div>
                 <div className="overline">{r.table_overline}</div>
-                <div className="font-display text-xl text-white mt-1">
+                <div className="font-display text-xl text-[#0A0A0A] mt-1">
                   {r.table_title}
                 </div>
               </div>
-              <span className="text-[10px] tracking-[0.3em] uppercase text-white/40 hidden md:block">
+              <span className="text-[10px] tracking-[0.3em] uppercase text-[#0A0A0A] hidden md:block">
                 {r.table_spec}
               </span>
             </div>
@@ -172,17 +172,17 @@ export default function BrassRodsExport() {
                       key={i}
                       className={`${
                         i !== r.rows.length - 1
-                          ? "border-b border-white/5"
+                          ? "border-b border-[#0A0A0A]/5"
                           : ""
-                      } hover:bg-white/[0.02] transition-colors`}
+                      } hover:bg-[#0A0A0A]/[0.02] transition-colors`}
                     >
                       <th
                         scope="row"
-                        className="text-start align-top px-6 lg:px-8 py-4 text-[11px] tracking-[0.25em] uppercase text-white/50 font-medium w-[42%]"
+                        className="text-start align-top px-6 lg:px-8 py-4 text-[11px] tracking-[0.25em] uppercase text-[#0A0A0A] font-medium w-[42%]"
                       >
                         {k}
                       </th>
-                      <td className="px-6 lg:px-8 py-4 text-white/85 leading-relaxed">
+                      <td className="px-6 lg:px-8 py-4 text-[#0A0A0A] leading-relaxed">
                         {v}
                       </td>
                     </tr>
@@ -192,14 +192,14 @@ export default function BrassRodsExport() {
             </div>
           </div>
 
-          <div className="lg:col-span-4 border border-[#D4AF37]/25 bg-gradient-to-b from-[#1a1407] to-[#0B0B0B] p-8 flex flex-col">
+          <div className="lg:col-span-4 border border-[#9CB4A9]/25 bg-gradient-to-b from-[#F0F5F2] to-[#FFFFFF] p-8 flex flex-col">
             <div className="overline mb-3">{r.bulk_overline}</div>
-            <h3 className="font-display text-3xl text-white leading-tight">
+            <h3 className="font-display text-3xl text-[#0A0A0A] leading-tight">
               {r.bulk_title_a}
               <br />
               <span className="brass-text italic">{r.bulk_title_b}</span>
             </h3>
-            <p className="mt-4 text-sm text-white/65 leading-relaxed">
+            <p className="mt-4 text-sm text-[#0A0A0A] leading-relaxed">
               {r.bulk_body}
             </p>
 
@@ -207,7 +207,7 @@ export default function BrassRodsExport() {
               <button
                 onClick={() => goTo("contact")}
                 data-testid="rods-cta-quote"
-                className="group w-full inline-flex items-center justify-between gap-3 bg-[#D4AF37] hover:bg-[#F3C844] text-black px-5 py-4 text-sm font-medium tracking-wide transition-colors"
+                className="group w-full inline-flex items-center justify-between gap-3 bg-[#9CB4A9] hover:bg-[#8CA499] text-black px-5 py-4 text-sm font-medium tracking-wide transition-colors"
               >
                 {r.cta_quote}
                 <ArrowUpRight
@@ -220,7 +220,7 @@ export default function BrassRodsExport() {
                 target="_blank"
                 rel="noreferrer"
                 data-testid="rods-cta-whatsapp"
-                className="group w-full inline-flex items-center justify-between gap-3 border border-white/20 hover:border-[#25D366] text-white px-5 py-4 text-sm font-medium tracking-wide transition-colors"
+                className="group w-full inline-flex items-center justify-between gap-3 border border-[#0A0A0A]/20 hover:border-[#25D366] text-[#0A0A0A] px-5 py-4 text-sm font-medium tracking-wide transition-colors"
               >
                 {r.cta_whatsapp}
                 <svg
@@ -234,13 +234,13 @@ export default function BrassRodsExport() {
               </a>
             </div>
 
-            <div className="mt-8 pt-6 border-t border-white/10 grid grid-cols-2 gap-4 text-xs">
+            <div className="mt-8 pt-6 border-t border-[#0A0A0A]/10 grid grid-cols-2 gap-4 text-xs">
               {r.foot_keys.map((k, i) => (
                 <div key={i}>
-                  <div className="text-white/40 uppercase tracking-[0.2em] text-[10px]">
+                  <div className="text-[#0A0A0A] uppercase tracking-[0.2em] text-[10px]">
                     {k}
                   </div>
-                  <div className="mt-1 text-white/90">{r.foot_vals[i]}</div>
+                  <div className="mt-1 text-[#0A0A0A]">{r.foot_vals[i]}</div>
                 </div>
               ))}
             </div>
