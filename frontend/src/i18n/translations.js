@@ -51,9 +51,9 @@ export const en = {
     title_b: " art of brass",
     title_c: "crafted for modern architecture.",
     body:
-      "Omera Exports is the premium hardware atelier of Jaiguru Brass. We design and manufacture solid-brass hinges, bolts, handles and door fittings for projects that refuse to compromise on tactility, finish or longevity. Every piece is finished by hand and calibrated to architectural-grade tolerances.",
+      "Omera Exports is the premium hardware atelier of Jay Guru Brass. We design and manufacture solid-brass hinges, bolts, handles and door fittings for projects that refuse to compromise on tactility, finish or longevity. Every piece is finished by hand and calibrated to architectural-grade tolerances.",
     legacy_overline: "A Family Legacy",
-    legacy_brand: "Jaiguru Brass",
+    legacy_brand: "Jay Guru Brass",
     atelier: "Atelier",
     city_a: "Mumbai",
     city_b: "India",
@@ -243,16 +243,16 @@ export const en = {
   },
 
   footer: {
-    place: "Jaiguru Brass · Mumbai",
+    place: "Jay Guru Brass · Mumbai",
     desc:
       "Precision-crafted brass hardware for modern architecture and timeless interiors.",
     atelier_overline: "Atelier",
-    atelier_addr: "Jaiguru Brass\nMumbai, Maharashtra · India",
+    atelier_addr: "Jay Guru Brass\nMumbai, Maharashtra · India",
     navigate: "Navigate",
     collection: "Collection",
     follow: "Follow",
     back_to_top: "Back to top",
-    rights: "© {year} Jaiguru Brass · All rights reserved. Crafted in Mumbai.",
+    rights: "© {year} Jay Guru Brass · All rights reserved. Crafted in Mumbai.",
     cta_overline: "Trade · Export · Custom",
     cta_title_a: "Let's craft your",
     cta_title_b: "next project.",
