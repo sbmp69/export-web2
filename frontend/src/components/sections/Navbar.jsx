@@ -82,8 +82,7 @@ export default function Navbar() {
             data-testid="nav-logo"
             className="flex items-center gap-3 group"
           >
-            <span className="relative w-10 h-10 flex items-center justify-center border border-[#9CB4A9]/40 group-hover:border-[#9CB4A9] transition shrink-0">
-              <span className="font-display text-[#9CB4A9] text-xl leading-none">O</span>
+            <img src="/omera_logo.png" alt="Omera Exports" className="w-10 h-10 object-contain shrink-0" />
               <span className="absolute -bottom-1 -right-1 w-2 h-2 bg-[#9CB4A9]" />
             </span>
             <div className="text-start leading-tight">
