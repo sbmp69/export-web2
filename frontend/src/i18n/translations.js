@@ -22,7 +22,7 @@ export const en = {
     title_b: "Premium Brass ",
     title_c: "Hardware",
     sub:
-      "India's leading export house for solid brass architectural hardware. We manufacture and supply premium hinges, bolts, and door fittings to international dealers, builders, and specifiers worldwide.",
+      "India's leading brass hardware manufacturer and export house for solid brass architectural hardware. We manufacture and supply premium hinges, bolts, and door fittings to international dealers, builders, and specifiers worldwide.",
     explore: "Explore Products",
     contact: "Contact Us",
     scroll: "Scroll",
@@ -51,7 +51,7 @@ export const en = {
     title_b: " brass export house",
     title_c: "serving global markets.",
     body:
-      "Omera Exports is the dedicated international trade division of Jayguru Brass. We specialize in manufacturing and exporting high-volume, premium solid-brass hinges, tower bolts, and architectural hardware to foreign clients. Our production is strictly calibrated to meet international architectural-grade standards.",
+      "Omera Exports is the dedicated international trade division of Jayguru Brass. As a direct OEM brass fittings manufacturer in India, we specialize in manufacturing and exporting high-volume, premium solid-brass hinges, tower bolts, and architectural hardware to foreign clients. Our production is strictly calibrated to meet international architectural-grade standards.",
     legacy_overline: "A Family Legacy",
     legacy_brand: "Jayguru Brass",
     atelier: "Export House",
@@ -245,7 +245,7 @@ export const en = {
   footer: {
     place: "Jayguru Brass · Mumbai",
     desc:
-      "India's leading exporter of precision-crafted brass hardware for global markets.",
+      "India's leading OEM manufacturer and exporter of precision-crafted brass hardware for global markets.",
     atelier_overline: "Head Office",
     atelier_addr: "Jayguru Brass\nMumbai, Maharashtra · India",
     navigate: "Navigate",
