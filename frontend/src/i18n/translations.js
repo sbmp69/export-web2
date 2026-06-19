@@ -30,7 +30,7 @@ export const en = {
       { v: "40+", l: "Countries Exported To" },
       { v: "350+", l: "Global Clients" },
       { v: "100%", l: "Export Quality Brass" },
-      { v: "ISO", l: "Certified Facility" },
+      { v: "OEM", l: "Custom Manufacturing" },
     ],
   },
 
@@ -312,7 +312,7 @@ export const ar = {
       { v: "+40", l: "دولة تم التصدير إليها" },
       { v: "+350", l: "عميل عالمي" },
       { v: "100%", l: "نحاس بجودة تصدير" },
-      { v: "ISO", l: "منشأة معتمدة" },
+      { v: "OEM", l: "تصنيع مخصص" },
     ],
   },
 
