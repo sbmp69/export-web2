@@ -10,42 +10,42 @@ const STATIC = [
     img: "/generated/brass-rods-hero.jpg",
     span: "lg:col-span-7 lg:row-span-2",
     height: "h-[480px] lg:h-[760px]",
-    target: "rods",
+    category: "Brass Rod",
   },
   {
     code: "02",
     img: "https://images.unsplash.com/photo-1670864083452-e49c718b911f?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200",
     span: "lg:col-span-5",
     height: "h-[360px]",
-    target: "contact",
+    category: "Hinge",
   },
   {
     code: "03",
     img: "https://images.unsplash.com/photo-1760085160766-ed473efe941e?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200",
     span: "lg:col-span-5",
     height: "h-[380px]",
-    target: "contact",
+    category: "All",
   },
   {
     code: "04",
     img: "https://images.unsplash.com/photo-1745682593309-f0aeb18af228?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200",
     span: "lg:col-span-4",
     height: "h-[360px]",
-    target: "contact",
+    category: "Lever Handle",
   },
   {
     code: "05",
     img: "https://images.pexels.com/photos/7605492/pexels-photo-7605492.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=900&w=1200",
     span: "lg:col-span-4",
     height: "h-[360px]",
-    target: "contact",
+    category: "All",
   },
   {
     code: "06",
     img: "https://images.pexels.com/photos/13722891/pexels-photo-13722891.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=900&w=1200",
     span: "lg:col-span-4",
     height: "h-[360px]",
-    target: "contact",
+    category: "All",
   },
 ];
 
@@ -92,7 +92,7 @@ export default function Products() {
                 transition={{ duration: 0.7, delay: i * 0.06 }}
                 onMouseEnter={() => setHovered(s.code)}
                 onMouseLeave={() => setHovered(null)}
-                onClick={() => navigate("/catalogue")}
+                onClick={() => navigate("/catalogue", { state: { category: s.category } })}
                 className={`relative group overflow-hidden border border-[#0A0A0A]/10 hover:border-[#9CB4A9]/50 transition-all duration-500 bg-[#F5F5F5] cursor-pointer ${s.span}`}
                 data-testid={`product-card-${s.code}`}
               >

@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import Navbar from "@/components/sections/Navbar";
 import Footer from "@/components/sections/Footer";
 import WhatsAppFloat from "@/components/sections/WhatsAppFloat";
@@ -10,7 +10,16 @@ const CATEGORIES = ["All", "Lever Handle", "Mortise Handle", "Pull Handle", "Cab
 
 export default function Catalogue() {
   const navigate = useNavigate();
-  const [activeCategory, setActiveCategory] = useState("All");
+  const location = useLocation();
+  const [activeCategory, setActiveCategory] = useState(location.state?.category || "All");
+  
+  useEffect(() => {
+    if (location.state?.category) {
+      setActiveCategory(location.state.category);
+      window.scrollTo(0, 0);
+    }
+  }, [location.state]);
+  
   const [hovered, setHovered] = useState(null);
   const [expandedId, setExpandedId] = useState(null);
 
