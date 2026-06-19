@@ -142,17 +142,7 @@ export default function Contact() {
             </div>
           </div>
 
-          <div className="mt-8 border border-[#0A0A0A]/10 overflow-hidden" data-testid="contact-map">
-            <iframe
-              title="Omera Exports — Mumbai"
-              src="https://www.google.com/maps?q=Mumbai,India&output=embed"
-              width="100%"
-              height="260"
-              style={{ border: 0, filter: "grayscale(0.6) contrast(1.1) invert(0.92) hue-rotate(180deg)" }}
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            />
-          </div>
+
         </div>
 
         <motion.form
