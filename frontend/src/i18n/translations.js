@@ -90,28 +90,28 @@ export const en = {
           "Heritage-quality hinges machined to micron tolerances, heavily exported to European and US markets.",
       },
       {
-        title: "Tower Bolts",
-        tagline: "Precision-fit · concealed engineering",
-        desc:
-          "Heavyweight bolts in antique, satin and PVD finishes designed for demanding international installations.",
-      },
-      {
-        title: "Door Handles",
+        title: "Lever Handles",
         tagline: "Sculpted forms · fine matte finish",
         desc:
-          "Door pulls and lever sets engineered for tactile excellence and exported for global modern interiors.",
+          "Premium lever sets engineered for tactile excellence and exported for global modern interiors.",
       },
       {
-        title: "Architectural Hardware",
-        tagline: "Knockers · numerals · escutcheons",
+        title: "Mortise Handles",
+        tagline: "Classic design · high security",
         desc:
-          "A complete suite of architectural details that define the character of premium international projects.",
+          "Elegant mortise handle sets providing uncompromised security and sophisticated aesthetics.",
       },
       {
-        title: "Premium Brass Accessories",
-        tagline: "Specifier-grade · custom OEM",
+        title: "Pull Handles",
+        tagline: "Statement pieces · robust grip",
         desc:
-          "Bespoke manufacturing programmes for overseas builders, designers and large global architectural projects.",
+          "Large scale pull handles designed to create a bold entrance for luxury commercial and residential doors.",
+      },
+      {
+        title: "Cabinet Knobs",
+        tagline: "Precision detailing · perfect scale",
+        desc:
+          "Solid brass knobs machined to perfection, adding a touch of understated luxury to premium cabinetry.",
       },
     ],
   },
