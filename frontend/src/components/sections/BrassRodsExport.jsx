@@ -107,7 +107,7 @@ export default function BrassRodsExport() {
                   src={ROD_IMAGES[i]}
                   alt={rod.title}
                   loading="lazy"
-                  className="w-full h-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.08]"
+                  className="w-full h-full object-contain mix-blend-multiply p-6 transition-transform duration-[1200ms] ease-out group-hover:scale-[1.08]"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#FFFFFF] via-[#FFFFFF]/30 to-transparent" />
                 <span className="absolute top-4 start-4 text-[10px] tracking-[0.3em] uppercase text-[#9CB4A9]">
