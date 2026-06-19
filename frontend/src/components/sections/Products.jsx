@@ -14,7 +14,7 @@ const STATIC = [
   },
   {
     code: "02",
-    img: "/catalogue/product_62.jpeg",
+    img: "/catalogue/hinge_1.png",
     span: "lg:col-span-5",
     height: "h-[360px]",
     category: "Hinge",
