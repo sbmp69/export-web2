@@ -78,34 +78,34 @@ export const en = {
       "Looking for a specific finish, dimension or custom OEM manufacturing? Our global trade desk responds within 24 hours.",
     items: [
       {
-        title: "مقابض أبواب فاخرة",
-        tagline: "تصميمات أنيقة · إحساس مميز",
-        desc: "مقابض أبواب فاخرة ورائعة مصممة للديكورات الداخلية الفاخرة والمداخل البارزة.",
+        title: "Fancy Door Handles",
+        tagline: "Elegant designs · premium feel",
+        desc: "Exquisite fancy door handles crafted for luxury interiors and statement entrances.",
       },
       {
-        title: "مفصلات نحاسية",
-        tagline: "نحاس صلب مصبوب · محور معماري",
-        desc: "مفصلات بجودة تراثية مصنعة بتفاوتات ميكرونية، يتم تصديرها بكثافة إلى الأسواق الأوروبية والأمريكية.",
+        title: "Brass Hinges",
+        tagline: "Cast solid-brass · architectural pivot",
+        desc: "Heritage-quality hinges machined to micron tolerances, heavily exported to European and US markets.",
       },
       {
-        title: "مقابض خزائن",
-        tagline: "تفاصيل دقيقة · مقياس مثالي",
-        desc: "مقابض من النحاس الصلب مصنعة بإتقان، تضفي لمسة من الفخامة الرقيقة على الخزائن الممتازة.",
+        title: "Cabinet Knobs",
+        tagline: "Precision detailing · perfect scale",
+        desc: "Solid brass knobs machined to perfection, adding a touch of understated luxury to premium cabinetry.",
       },
       {
-        title: "مقابض سحب",
-        tagline: "قطع مميزة · قبضة قوية",
-        desc: "مقابض سحب كبيرة الحجم مصممة لإنشاء مدخل جريء للأبواب التجارية والسكنية الفاخرة.",
+        title: "Pull Handles",
+        tagline: "Statement pieces · robust grip",
+        desc: "Large scale pull handles designed to create a bold entrance for luxury commercial and residential doors.",
       },
       {
-        title: "قضبان نحاسية",
-        tagline: "دائرية · سداسية · مربعة · قطاعات مخصصة",
-        desc: "قضبان نحاسية بجودة تصدير مسحوبة بتفاوتات دقيقة للاستخدام الصناعي والمعماري والهندسي عالمياً.",
+        title: "Brass Rods",
+        tagline: "Round · Hex · Square · Custom profiles",
+        desc: "Export-grade brass rods drawn to precise tolerances for industrial, architectural and engineering use globally.",
       },
       {
-        title: "ترابيس (Tower Bolts)",
-        tagline: "ملاءمة دقيقة · هندسة مخفية",
-        desc: "ترابيس ثقيلة الوزن مصممة للتركيبات الدولية الصعبة والأمان الفائق.",
+        title: "Tower Bolts",
+        tagline: "Precision-fit · concealed engineering",
+        desc: "Heavyweight bolts designed for demanding international installations and superior security.",
       },
     ],
   },
@@ -354,40 +354,34 @@ export const ar = {
       "هل تبحث عن تشطيب معين أو أبعاد أو تصنيع OEM مخصص؟ مكتب التجارة العالمي لدينا يرد خلال 24 ساعة.",
     items: [
       {
-        title: "قضبان نحاسية",
-        tagline: "مستديرة · سداسية · مربعة · مقاطع مخصصة",
-        desc:
-          "قضبان نحاسية بدرجة تصدير مسحوبة بدقة للاستخدامات الصناعية والمعمارية والهندسية عالمياً.",
+        title: "مقابض أبواب فاخرة",
+        tagline: "تصميمات أنيقة · إحساس مميز",
+        desc: "مقابض أبواب فاخرة ورائعة مصممة للديكورات الداخلية الفاخرة والمداخل البارزة.",
       },
       {
         title: "مفصلات نحاسية",
         tagline: "نحاس صلب مصبوب · محور معماري",
-        desc:
-          "مفصلات بجودة تراثية مُشغّلة بدقة الميكرون، تُصدّر بكثافة للأسواق الأوروبية والأمريكية.",
+        desc: "مفصلات بجودة تراثية مصنعة بتفاوتات ميكرونية، يتم تصديرها بكثافة إلى الأسواق الأوروبية والأمريكية.",
       },
       {
-        title: "أقفال أبراج",
-        tagline: "تركيب دقيق · هندسة مخفية",
-        desc:
-          "أقفال ثقيلة بتشطيبات عتيقة وساتان و PVD للتركيبات الدولية المتطلبة.",
+        title: "مقابض خزائن",
+        tagline: "تفاصيل دقيقة · مقياس مثالي",
+        desc: "مقابض من النحاس الصلب مصنعة بإتقان، تضفي لمسة من الفخامة الرقيقة على الخزائن الممتازة.",
       },
       {
-        title: "مقابض أبواب",
-        tagline: "أشكال منحوتة · لمسة مطفية فاخرة",
-        desc:
-          "مقابض مصممة لتميّز ملمسي وتُصدر للتصاميم الداخلية الحديثة حول العالم.",
+        title: "مقابض سحب",
+        tagline: "قطع مميزة · قبضة قوية",
+        desc: "مقابض سحب كبيرة الحجم مصممة لإنشاء مدخل جريء للأبواب التجارية والسكنية الفاخرة.",
       },
       {
-        title: "أجهزة معمارية",
-        tagline: "مطارق · أرقام · صفائح",
-        desc:
-          "مجموعة كاملة من التفاصيل المعمارية التي تُحدد طابع المشاريع الدولية الفاخرة.",
+        title: "قضبان نحاسية",
+        tagline: "دائرية · سداسية · مربعة · قطاعات مخصصة",
+        desc: "قضبان نحاسية بجودة تصدير مسحوبة بتفاوتات دقيقة للاستخدام الصناعي والمعماري والهندسي عالمياً.",
       },
       {
-        title: "ملحقات نحاسية مخصصة",
-        tagline: "OEM · حسب المواصفات",
-        desc:
-          "برامج تصنيع حسب الطلب للمقاولين الأجانب والمصممين والمشاريع المعمارية العالمية.",
+        title: "ترابيس (Tower Bolts)",
+        tagline: "ملاءمة دقيقة · هندسة مخفية",
+        desc: "ترابيس ثقيلة الوزن مصممة للتركيبات الدولية الصعبة والأمان الفائق.",
       },
     ],
   },
