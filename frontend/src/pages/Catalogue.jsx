@@ -5,7 +5,7 @@ import Navbar from "@/components/sections/Navbar";
 import Footer from "@/components/sections/Footer";
 import WhatsAppFloat from "@/components/sections/WhatsAppFloat";
 import catalogueData from "@/data/catalogue.json";
-import { useI18n } from "@/i18n/I18nContext";
+import { useI18n } from "@/i18n/I18nProvider";
 
 const CATEGORIES = ["All", "Fancy Door Handle", "Hinge", "Cabinet Knob", "Pull Handle", "Brass Rod", "Tower Bolt"];
 
