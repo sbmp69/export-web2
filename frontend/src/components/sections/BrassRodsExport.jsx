@@ -6,7 +6,7 @@ import { useI18n } from "@/i18n/I18nProvider";
 const PHONE = "9099369442";
 
 const ROD_IMAGES = [
-  "/generated/brass-rods-round.jpg",
+  "/generated/brass-rods-round-v2.jpg",
   "/generated/brass-rods-hex.jpg",
   "/generated/brass-rods-square.jpg",
   "/generated/brass-rods-custom.jpg",
