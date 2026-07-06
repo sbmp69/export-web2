@@ -5,12 +5,15 @@ import Navbar from "@/components/sections/Navbar";
 import Footer from "@/components/sections/Footer";
 import WhatsAppFloat from "@/components/sections/WhatsAppFloat";
 import catalogueData from "@/data/catalogue.json";
+import { useI18n } from "@/i18n/I18nContext";
 
 const CATEGORIES = ["All", "Fancy Door Handle", "Hinge", "Cabinet Knob", "Pull Handle", "Brass Rod", "Tower Bolt"];
 
 export default function Catalogue() {
   const navigate = useNavigate();
   const location = useLocation();
+  const { t } = useI18n();
+  const p = t.catalogue_page;
   const [activeCategory, setActiveCategory] = useState(location.state?.category || "All");
   
   useEffect(() => {
@@ -36,10 +39,10 @@ export default function Catalogue() {
           {/* Header */}
           <div className="mb-16">
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl tracking-tight font-light mb-6">
-              Our <span className="italic brass-text">Catalogue</span>
+              {p.title_a}<span className="italic brass-text">{p.title_b}</span>
             </h1>
             <p className="text-[#0A0A0A] max-w-2xl leading-relaxed">
-              Explore our premium collection of solid brass door handles and cabinet knobs, designed to elevate luxury interiors with unmatched craftsmanship.
+              {p.subtitle}
             </p>
           </div>
 
@@ -55,7 +58,7 @@ export default function Catalogue() {
                     : "bg-[#0A0A0A]/5 text-[#0A0A0A] hover:bg-[#0A0A0A]/10 hover:text-[#0A0A0A]"
                 }`}
               >
-                {category}
+                {p.categories[category] || category}
               </button>
             ))}
           </div>

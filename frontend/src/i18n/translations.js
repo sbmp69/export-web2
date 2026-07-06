@@ -275,6 +275,21 @@ export const en = {
   },
 
   whatsapp: { kicker: "Export Desk", label: "WhatsApp" },
+
+  catalogue_page: {
+    title_a: "كتالوج ",
+    title_b: "منتجاتنا",
+    subtitle: "استكشف مجموعتنا الفاخرة من مقابض الأبواب ومقابض الخزائن المصنوعة من النحاس الصلب، المصممة للارتقاء بالديكورات الداخلية الفاخرة بحرفية لا مثيل لها.",
+    categories: {
+      "All": "الكل",
+      "Fancy Door Handle": "مقابض أبواب فاخرة",
+      "Hinge": "مفصلات",
+      "Cabinet Knob": "مقابض خزائن",
+      "Pull Handle": "مقابض سحب",
+      "Brass Rod": "قضبان نحاسية",
+      "Tower Bolt": "ترابيس"
+    }
+  },
 };
 
 export const ar = {
