@@ -7,10 +7,10 @@ import { useNavigate } from "react-router-dom";
 const STATIC = [
   {
     code: "01",
-    img: "/generated/brass-rods-hero.jpg",
+    img: "/catalogue/fancy_door_handle_1.png",
     span: "lg:col-span-7 lg:row-span-2",
     height: "h-[480px] lg:h-[760px]",
-    category: "Brass Rod",
+    category: "Fancy Door Handle",
   },
   {
     code: "02",
@@ -21,31 +21,31 @@ const STATIC = [
   },
   {
     code: "03",
-    img: "/catalogue/product_1.jpeg",
+    img: "/catalogue/cabinet_knob_1.png",
     span: "lg:col-span-5",
     height: "h-[380px]",
-    category: "Lever Handle",
+    category: "Cabinet Knob",
   },
   {
     code: "04",
-    img: "/catalogue/product_33.jpeg",
-    span: "lg:col-span-4",
-    height: "h-[360px]",
-    category: "Mortise Handle",
-  },
-  {
-    code: "05",
-    img: "/catalogue/product_41.jpeg",
+    img: "/catalogue/pull_handle_1.png",
     span: "lg:col-span-4",
     height: "h-[360px]",
     category: "Pull Handle",
   },
   {
-    code: "06",
-    img: "/catalogue/product_52.jpeg",
+    code: "05",
+    img: "/catalogue/brass_rod_1.png",
     span: "lg:col-span-4",
     height: "h-[360px]",
-    category: "Cabinet Knob",
+    category: "Brass Rod",
+  },
+  {
+    code: "06",
+    img: "/catalogue/tower_bolt_1.png",
+    span: "lg:col-span-4",
+    height: "h-[360px]",
+    category: "Tower Bolt",
   },
 ];
 

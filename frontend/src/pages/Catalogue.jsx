@@ -6,7 +6,7 @@ import Footer from "@/components/sections/Footer";
 import WhatsAppFloat from "@/components/sections/WhatsAppFloat";
 import catalogueData from "@/data/catalogue.json";
 
-const CATEGORIES = ["All", "Lever Handle", "Mortise Handle", "Pull Handle", "Cabinet Knob", "Hinge", "Brass Rod"];
+const CATEGORIES = ["All", "Fancy Door Handle", "Hinge", "Cabinet Knob", "Pull Handle", "Brass Rod", "Tower Bolt"];
 
 export default function Catalogue() {
   const navigate = useNavigate();
