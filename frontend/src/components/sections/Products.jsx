@@ -96,44 +96,48 @@ export default function Products() {
                 className={`relative group overflow-hidden border border-[#0A0A0A]/10 hover:border-[#9CB4A9]/50 transition-all duration-500 bg-[#F5F5F5] cursor-pointer ${s.span}`}
                 data-testid={`product-card-${s.code}`}
               >
-                <div className={`relative ${s.height} w-full overflow-hidden`}>
-                  <img
-                    src={s.img}
-                    alt={item.title}
-                    className="w-full h-full object-contain object-top p-6 pb-28 md:pb-32 lg:pb-36 mix-blend-multiply transition-transform duration-[1200ms] ease-out group-hover:scale-[1.06]"
-                    loading="lazy"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent opacity-90" />
-                  <div className="absolute inset-0 bg-[#FFFFFF]/0 group-hover:bg-black/20 transition-colors" />
+                <div className="flex flex-col h-full w-full">
+                  {/* Top Image Section */}
+                  <div className={`relative ${s.height} w-full flex items-center justify-center bg-[#F5F5F5] overflow-hidden`}>
+                    <img
+                      src={s.img}
+                      alt={item.title}
+                      className="w-full h-full object-contain mix-blend-multiply transition-transform duration-[1200ms] ease-out group-hover:scale-[1.06] p-8"
+                      loading="lazy"
+                    />
+                    
+                    <div className="absolute top-5 start-5 flex items-center gap-3">
+                      <span className="text-[10px] tracking-[0.3em] uppercase text-[#0A0A0A]/50 font-medium">
+                        {p.series} · {s.code}
+                      </span>
+                    </div>
 
-                  <div className="absolute top-5 start-5 flex items-center gap-3">
-                    <span className="text-[10px] tracking-[0.3em] uppercase text-[#9CB4A9]">
-                      {p.series} · {s.code}
-                    </span>
+                    <div className="absolute top-5 end-5 w-10 h-10 border border-[#0A0A0A]/10 flex items-center justify-center text-[#0A0A0A] group-hover:border-[#9CB4A9] group-hover:bg-[#9CB4A9] group-hover:text-white transition">
+                      <ArrowUpRight size={18} />
+                    </div>
                   </div>
 
-                  <div className="absolute top-5 end-5 w-10 h-10 border border-white/20 flex items-center justify-center text-white group-hover:border-[#9CB4A9] group-hover:text-[#9CB4A9] transition">
-                    <ArrowUpRight size={18} />
-                  </div>
-
-                  <div className="absolute bottom-0 left-0 right-0 p-6 lg:p-8">
-                    <div className="text-[10px] uppercase tracking-[0.3em] text-white mb-2">
+                  {/* Bottom Text Section */}
+                  <div className="relative bg-[#1A1A1A] p-6 lg:p-8 flex flex-col justify-end flex-grow">
+                    <div className="text-[10px] uppercase tracking-[0.3em] text-[#9CB4A9] mb-2">
                       {item.tagline}
                     </div>
-                    <h3 className="font-display text-2xl md:text-3xl lg:text-4xl text-white leading-tight">
+                    <h3 className="font-display text-2xl md:text-3xl text-white leading-tight">
                       {item.title}
                     </h3>
-                    <p className="mt-3 text-sm text-white max-w-md leading-relaxed opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500">
-                      {item.desc}
-                    </p>
-                  </div>
+                    <div className="overflow-hidden">
+                      <p className="mt-3 text-sm text-white/70 max-w-md leading-relaxed hidden group-hover:block transition-all duration-500">
+                        {item.desc}
+                      </p>
+                    </div>
 
-                  {hovered === s.code && (
-                    <motion.div
-                      layoutId="active-line"
-                      className="absolute bottom-0 left-0 right-0 h-px bg-[#9CB4A9]"
-                    />
-                  )}
+                    {hovered === s.code && (
+                      <motion.div
+                        layoutId="active-line"
+                        className="absolute bottom-0 left-0 right-0 h-1 bg-[#9CB4A9]"
+                      />
+                    )}
+                  </div>
                 </div>
               </motion.article>
             );
