@@ -67,7 +67,7 @@ export default function Hero() {
           >
             {h.title_a}
             <br />
-            <span className="italic font-normal">{h.title_b}</span>
+            <span>{h.title_b}</span>
             <span className="brass-text">{h.title_c}</span>
             <span className="text-[#9CB4A9]">.</span>
           </motion.h1>
