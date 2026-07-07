@@ -45,6 +45,14 @@ export default function Contact() {
       await axios.post('https://formspree.io/f/xaqgkllp', form);
       setIsSubmitted(true);
       setForm({ name: "", email: "", phone: "", company: "", interest: "", message: "" });
+      
+      // Trigger brochure download
+      const link = document.createElement('a');
+      link.href = '/Omera_Exports_Catalogue_2026.pdf';
+      link.download = 'Omera_Exports_Catalogue_2026.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
     } catch (err) {
       toast.error(c.error_send);
     } finally {
