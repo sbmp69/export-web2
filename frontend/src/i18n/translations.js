@@ -277,17 +277,17 @@ export const en = {
   whatsapp: { kicker: "Export Desk", label: "WhatsApp" },
 
   catalogue_page: {
-    title_a: "كتالوج ",
-    title_b: "منتجاتنا",
-    subtitle: "استكشف مجموعتنا الفاخرة من مقابض الأبواب ومقابض الخزائن المصنوعة من النحاس الصلب، المصممة للارتقاء بالديكورات الداخلية الفاخرة بحرفية لا مثيل لها.",
+    title_a: "Our ",
+    title_b: "Catalogue",
+    subtitle: "Explore our premium collection of solid brass door handles, cabinet knobs, hinges, and architectural hardware designed for luxury interiors.",
     categories: {
-      "All": "الكل",
-      "Fancy Door Handle": "مقابض أبواب فاخرة",
-      "Hinge": "مفصلات",
-      "Cabinet Knob": "مقابض خزائن",
-      "Pull Handle": "مقابض سحب",
-      "Brass Rod": "قضبان نحاسية",
-      "Tower Bolt": "ترابيس"
+      "All": "All",
+      "Fancy Door Handle": "Fancy Door Handles",
+      "Hinge": "Hinges",
+      "Cabinet Knob": "Cabinet Knobs",
+      "Pull Handle": "Pull Handles",
+      "Brass Rod": "Brass Rods",
+      "Tower Bolt": "Tower Bolts"
     }
   },
 };

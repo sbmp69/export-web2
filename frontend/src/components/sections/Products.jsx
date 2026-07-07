@@ -100,7 +100,7 @@ export default function Products() {
                   <img
                     src={s.img}
                     alt={item.title}
-                    className="w-full h-full object-contain mix-blend-multiply p-6 transition-transform duration-[1200ms] ease-out group-hover:scale-[1.06]"
+                    className="w-full h-full object-contain object-top p-6 pb-28 md:pb-32 lg:pb-36 mix-blend-multiply transition-transform duration-[1200ms] ease-out group-hover:scale-[1.06]"
                     loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent opacity-90" />
