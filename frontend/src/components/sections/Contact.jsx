@@ -261,6 +261,8 @@ export default function Contact() {
                 <Send size={16} className="transition-transform group-hover:translate-x-0.5" />
               </button>
             </div>
+            </>
+            )}
           </div>
         </motion.form>
       </div>
