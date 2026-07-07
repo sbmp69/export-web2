@@ -30,6 +30,7 @@ export default function Contact() {
     message: "",
   });
   const [loading, setLoading] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const update = (k, v) => setForm((s) => ({ ...s, [k]: v }));
 
@@ -41,8 +42,8 @@ export default function Contact() {
     }
     try {
       setLoading(true);
-      await axios.post(`${API}/inquiries`, form);
-      toast.success(c.success);
+      await axios.post('https://formspree.io/f/xaqgkllp', form);
+      setIsSubmitted(true);
       setForm({ name: "", email: "", phone: "", company: "", interest: "", message: "" });
     } catch (err) {
       toast.error(c.error_send);
@@ -167,7 +168,17 @@ export default function Contact() {
               </span>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {isSubmitted ? (
+              <div className="py-20 text-center text-[#0A0A0A] flex flex-col items-center justify-center">
+                <div className="w-16 h-16 bg-[#9CB4A9]/20 rounded-full flex items-center justify-center mb-6">
+                  <Send className="text-[#9CB4A9]" size={28} />
+                </div>
+                <h3 className="text-3xl font-display mb-3">Form submitted</h3>
+                <p className="text-[#0A0A0A]/70 max-w-sm">Experts will get in touch soon.</p>
+              </div>
+            ) : (
+              <>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Field
                 label={c.f_name}
                 required
