@@ -52,7 +52,7 @@ export default function BrassRodsExport() {
             <h2 className="font-display text-4xl md:text-5xl lg:text-6xl leading-[1.05] tracking-tight text-[#0A0A0A] font-light">
               {r.title_a}
               <br />
-              <span className="italic">{r.title_b}</span>{" "}
+              <span>{r.title_b}</span>{" "}
               <span className="brass-text">{r.title_c}</span>
             </h2>
             <p className="mt-6 max-w-xl text-[#0A0A0A] leading-relaxed">

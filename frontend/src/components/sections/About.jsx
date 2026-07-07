@@ -68,7 +68,7 @@ export default function About() {
             className="font-display text-4xl md:text-5xl lg:text-6xl leading-[1.05] tracking-tight text-[#0A0A0A] font-light"
           >
             {a.title_a}
-            <span className="italic">{a.title_b}</span> —
+            <span>{a.title_b}</span> —
             <br />
             <span className="brass-text">{a.title_c}</span>
           </motion.h2>

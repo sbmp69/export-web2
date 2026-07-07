@@ -72,7 +72,7 @@ export default function Products() {
               <span className="w-8 h-px bg-[#9CB4A9]" /> {p.overline}
             </div>
             <h2 className="font-display text-4xl md:text-5xl lg:text-6xl leading-[1.05] tracking-tight text-[#0A0A0A] font-light max-w-3xl">
-              {p.title_a}<span className="italic">{p.title_b}</span> —
+              {p.title_a}<span>{p.title_b}</span> —
               <br />
               <span className="brass-text">{p.title_c}</span>
             </h2>
