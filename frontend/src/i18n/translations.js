@@ -60,8 +60,8 @@ export const en = {
     audiences: ["International Dealers", "Global Distributors", "Overseas Builders", "OEM Clients"],
     pillars: [
       { v: "Quality", l: "Export Grade" },
-      { v: "Logistics", l: "FOB / CIF" },
-      { v: "Trust", l: "Global Track Record" },
+      { v: "Logistics", l: "Safe & Secure Packaging" },
+      { v: "Trust", l: "Reliable Business Partner" },
     ],
   },
 
@@ -351,8 +351,8 @@ export const ar = {
     audiences: ["الموزعون الدوليون", "الموزعون العالميون", "المقاولون الأجانب", "عملاء OEM"],
     pillars: [
       { v: "جودة", l: "درجة تصدير" },
-      { v: "لوجستيات", l: "FOB / CIF" },
-      { v: "ثقة", l: "سجل عالمي" },
+      { v: "لوجستيات", l: "تغليف آمن وموثوق" },
+      { v: "ثقة", l: "شريك أعمال موثوق" },
     ],
   },
 
