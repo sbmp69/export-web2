@@ -9,7 +9,7 @@ const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 const API = `${BACKEND_URL}/api`;
 
 const PHONE = "9099369442";
-const EMAIL = "purnatpedhadiya2016@gmail.com";
+const EMAIL = "info@omeraexports.com";
 
 export default function Contact() {
   const { t, lang } = useI18n();

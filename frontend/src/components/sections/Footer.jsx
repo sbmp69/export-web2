@@ -14,7 +14,7 @@ import {
 import { useI18n } from "@/i18n/I18nProvider";
 
 const PHONE = "9099369442";
-const EMAIL = "purnatpedhadiya2016@gmail.com";
+const EMAIL = "info@omeraexports.com";
 
 const scrollTo = (id) => {
   const el = document.getElementById(id);
